@@ -1,0 +1,120 @@
+﻿* {
+    font-family: Tahoma;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+*:after, *:before {
+    content: "";
+    display: table;
+}
+
+*:after {
+    clear: both;
+}
+
+.height-full {
+  height: 100vh;
+}
+
+.bg-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.title {
+    font-family: Georgia;
+    font-size: 36px;
+    line-height: 1;
+    margin-top: 0;
+
+}
+
+.blocks {
+    position: relative;
+     display: block; 
+    padding-left: 15px;
+}
+
+.block {
+    position: relative;
+    display: block;
+    float: none;
+    width: 200px;
+    height: 200px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-right: 0px;
+    margin-bottom: 10px;
+}
+
+.block:first-child {
+    background-color: green;
+}
+
+.block:nth-child(2) {
+    background-color: red;
+}
+
+.block:nth-child(3) {
+    background-color: blue;
+}
+
+.h-center {
+    text-align: center;
+}
+
+.v-center span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.pad{
+padding-left:50px;
+padding-bottom:20px;
+}
+
+#btnConvert{
+display:block;
+width:auto;
+}
+
+#scoreCard{
+    font-family: Tahoma;
+    color:white;
+   
+    font-size: 24px;
+    font-weight:normal;  
+    display:block;
+    padding: 10px;
+    margin: 15px;
+    margin-top:-30px;
+    background-color: green;    
+}
+
+.pad-left{
+padding-left:50px;
+}
+
+.tuck{
+padding-left:20px;
+margin-top: -30px;
+}
+
+.label{
+padding-left:50px;
+display:block;
+text-align:left;
+}
+
+h2{
+margin-bottom:25px;
+}
+
+#powerUser{
+display:block;
+}
