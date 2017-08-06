@@ -1,0 +1,57 @@
+</!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style type="text/css">
+@media screen and (max-width: 550px) {
+table[class=emailwrapto100pc], img[class=emailwrapto100pc]
+{width:100% !important; height:auto !important; padding-bottom: 10px;}
+</style>
+</head>
+<body style="padding:0; margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:100%; background-color:#ffffff;" bgcolor="#ffffff">
+<table border="0" cellspacing="0" cellpadding="0" width="750" class="emailwrapto100pc">
+<tr>
+	<td class="emailcolsplit" align="left" valign="top" width="160" height="110" style="padding-left:10px; padding-right:10px">
+		<a href="http://www.upscoinc.com/sales"><img width="160" height="110" border="0" style="display: block; padding-top: 5px;" class="emailwrapto100pc" src="http://www.upscoinc.com/files/gna_Upsco Logo 2016 Final.png" alt="Visit UPSCO Online"/></a>
+	</td>
+	<td class="emailcolsplit" valign="top" style="padding-left:10px;padding-right:10px; vertical-align: bottom;">
+	
+    	<p class=MsoNormal>
+    	<b><span style='font-family:"Arial",sans-serif;color:#1F497D'> <<firstName>> 
+	<<lastName>> </span>
+    	<b><span style='font-family:Symbol;color:#1F497D'>&nbsp;|&nbsp;</span><b><span style='font-family:"Arial",sans-serif;color:#1F497D'> </span>
+ 		<span style='font-family:"Arial",sans-serif;color:#1F497D'><<position>></span></b>
+ 	<img width="500" height="22" border="0" style="display: block;" src="http://www.upscoinc.com/files/4rn_placeholder.png" /></a>
+    		<b><span style='font-family:Symbol;color:#1F497D'></span></b><b><span style='font-family:"Arial",sans-serif;color:#1F497D'> </span></b>
+  			<br /><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+			  color:#1F497D'>UPSCO, Inc.</span></b><b><span style='font-size:10.0pt;
+			  font-family:"Arial",sans-serif;color:#1F497D'> </span></b><b><span
+			  style='font-size:10.0pt;font-family:Symbol;color:#1F497D'>&nbsp;|&nbsp;</span></b><b><span
+			  style='font-size:10.0pt;font-family:"Arial",sans-serif;color:#1F497D'> </span></b><span
+			  style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#1F497D'>P.O. Box
+			  431, 67 Central Street, Moravia, NY 13118</span><br />
+			  <span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+			  color:#1F497D'>Office: (315) 497-1070 Ext.<<extension>></span><b><span style='font-size:10.0pt;font-family:Symbol;color:#1F497D'>&nbsp;|&nbsp;</span></b>
+			  <b><span style='font-size:10.0pt;font-family:"Arial",sans-serif;color:#1F497D'></span></b>
+			  <span style='font-size:9.0pt;font-family:"Arial",sans-serif; color:#1F497D'>
+			  Fax: (315) 497-0223</span>&nbsp;<<pipe>>&nbsp;
+			  <span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#1F497D'><<cellText>>&nbsp;
+ 			  <<cellNumber>></span><b><span style='font-size:10.0pt;font-family:"Arial",sans-serif; color:#1F497D; margin-bottom: -20px;'>
+			  </span></b><b><span style='font-size:10.0pt;font-family:Symbol; color:#1F497D'></span></b><b>
+			  <span style='font-size:10.0pt;font-family:"Arial",sans-serif; color:#1F497D'></span></b><br />
+			  <span style="position: bottom -5px; "><a href="mailto:<<emailAddress>>"><span style='color:black'>
+			  <span style="color:black; font-size:9.0pt;font-family:Arial; font-weight: 100"><<emailAddress>></span></span>
+			  </a>&nbsp;|&nbsp;<a href="http://www.upscoinc.com" style="font-weight: 100;" ><span style="color:black;font-weight: 100;">
+			  <span style="color:black;font-weight: 100; font-size:9.0pt;font-family:Arial;">www.upscoinc.com</span></span></a></span> 
+	</td>
+	<td class="emailcolsplit" align="left" valign="top" width="100" height="100" style="color:black; font-size:9.0pt;font-family:Arial; font-weight: lighter"><a href="http://bestcompaniesny.com/" style="font-weight: 100;">
+		<img width="109" height="109" border="0" style="display: block; font-weight: 100" class="emailwrapto100pc" src="http://www.upscoinc.com/files/mou_BestCompaniesLogo.png" alt="Best Companies to work for in NY"/></a>
+	</td>
+</tr>
+<tr >
+	<td colspan="3" class="emailcolsplit"  style="padding:10px; text-align: left; color:#1F497D'"><p style="font-style: regular; font-size: .6em; text-align: justify-all; font-stretch: extra-condensed;">This message is intended only for the use of the individual or entity to which it is addressed and may contain information that is privileged, confidential, and exempt from disclosure under applicable law</p>
+</td>
+</tr>
+</table>
+</body>
+</html>
