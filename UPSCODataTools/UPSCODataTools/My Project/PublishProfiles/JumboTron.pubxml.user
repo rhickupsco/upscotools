@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>X:\Inetpub\wwwroot\UpscoTools</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/UPSCODataTools.dll">
+      <publishTime>04/10/2017 14:59:18</publishTime>
+    </File>
+    <File Include="bin/UPSCODataTools.xml">
+      <publishTime>04/10/2017 14:59:18</publishTime>
+    </File>
+    <File Include="Data Access/Common.vb">
+      <publishTime>11/22/2016 15:57:00</publishTime>
+    </File>
+    <File Include="Images/a_boos.jpg">
+      <publishTime>10/19/2016 15:50:50</publishTime>
+    </File>
+    <File Include="Images/company50Logo.png">
+      <publishTime>10/19/2016 15:50:50</publishTime>
+    </File>
+    <File Include="Images/crown.png">
+      <publishTime>10/19/2016 15:50:50</publishTime>
+    </File>
+    <File Include="Images/upscoLogo.jpg">
+      <publishTime>10/19/2016 15:50:50</publishTime>
+    </File>
+    <File Include="JumboTron.aspx">
+      <publishTime>04/10/2017 13:57:10</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>04/10/2017 14:59:18</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.12.4.min.js">
+      <publishTime>10/19/2016 15:50:50</publishTime>
+    </File>
+    <File Include="Scripts/jumboTronScripts.js">
+      <publishTime>10/19/2016 15:50:50</publishTime>
+    </File>
+    <File Include="Scripts/refreshTimer.js">
+      <publishTime>11/16/2016 08:47:20</publishTime>
+    </File>
+    <File Include="Style/cssReset.css">
+      <publishTime>10/19/2016 15:50:50</publishTime>
+    </File>
+    <File Include="Style/divTablesStyle.css">
+      <publishTime>11/22/2016 16:20:52</publishTime>
+    </File>
+    <File Include="Style/upscoStyle.css">
+      <publishTime>11/22/2016 16:20:29</publishTime>
+    </File>
+    <File Include="UpscoData.Master">
+      <publishTime>11/15/2016 16:48:28</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/10/2017 12:12:30</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

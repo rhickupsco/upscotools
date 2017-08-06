@@ -1,0 +1,6 @@
+C:\sourcecontrol\UPSCO\UPSCODataTools\WebApplication1\obj\Release\UpscoSurveys.csprojResolveAssemblyReference.cache
+C:\sourcecontrol\UPSCO\UPSCODataTools\WebApplication1\bin\UpscoSurveys.dll.config
+C:\sourcecontrol\UPSCO\UPSCODataTools\WebApplication1\bin\UpscoSurveys.dll
+C:\sourcecontrol\UPSCO\UPSCODataTools\WebApplication1\bin\UpscoSurveys.pdb
+C:\sourcecontrol\UPSCO\UPSCODataTools\WebApplication1\obj\Release\UpscoSurveys.dll
+C:\sourcecontrol\UPSCO\UPSCODataTools\WebApplication1\obj\Release\UpscoSurveys.pdb

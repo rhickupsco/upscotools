@@ -1,0 +1,143 @@
+﻿.stackedSummary{
+    column-count: 1;  
+   background-image:linear-gradient(
+     black,steelblue
+    );
+    padding-top: 50px;
+    padding-left: 300px;
+    padding-right: 300px;
+    margin-bottom: -30px
+
+}
+
+.workcenterContainer{
+position: relative;
+top: 50%;
+transform: translateY(-50%);
+
+
+}
+.workcenter{
+column-count: 1;
+width: 99%;
+border: solid rgb(212,236,250) 1px;
+margin-top: 0px;
+margin-bottom: 5px;
+background-image:linear-gradient(
+     black,steelblue
+    );
+border-radius: 0px 10px 50px 50px;
+color: whitesmoke;
+line-height: 30px;
+font-size:2.4em;
+}
+
+.workcenter:hover{
+background-image:radial-gradient(
+     black,green,black
+    );
+color: palegreen;
+}
+
+.metrics{
+float:left;
+font-size:1em;
+position: relative;
+width: 33%;
+margin-bottom:3px;
+}
+
+.stroke{
+font-size: 5em;
+font-variant:small-caps;
+color: white;
+vertical-align: middle;
+text-align: center;
+clear: both;
+margin-bottom:1px;
+padding-bottom:5px;
+
+}
+
+ .excellent{
+
+     background-image:linear-gradient(
+     black, lawngreen
+    );
+    background-position:top;
+    position: relative;
+top: 50%;
+transform: translateY(-50%);
+border: groove 3px;
+border-bottom-right-radius: 55px;
+margin-bottom: 10px;
+}
+
+.error{
+    background-image:linear-gradient(
+     black,orange
+    );   
+     background-position:top;
+    position: relative;
+top: 50%;
+transform: translateY(-50%);
+border: groove 3px;
+border-bottom-right-radius: 55px;
+margin-bottom: 10px;
+    }*        
+
+.behind{
+      background-image:linear-gradient(
+     black,red
+    );   
+        position: relative;
+top: 50%;
+transform: translateY(-50%);
+border: groove 3px;
+border-bottom-right-radius: 55px;
+margin-bottom: 12px;
+}
+
+.deptTitle2{
+    font-size:1.1em;
+    color:white;
+display:block;     
+margin-bottom:8px;
+margin-top: 3px;
+
+}
+
+
+.mediocre{
+      background-image:linear-gradient(
+     black,yellow
+    );   
+       background-position:top;
+        position: relative;
+top: 50%;
+transform: translateY(-50%);
+border: groove 3px;
+border-bottom-right-radius: 55px;
+margin-bottom: 10px;
+}
+
+
+div#banner { 
+position: relative; 
+bottom: 0; 
+opacity:1;
+background-color: dimgray;
+color: aliceblue;
+font:bolder 3em "Helvetica Neue", "Verdana"; 
+font-variant:small-caps;
+width: 100%; 
+margin-bottom:3px;
+
+}
+
+div#banner-content { 
+width: 100%; 
+margin: 0 auto; 
+padding: 0px; 
+
+}

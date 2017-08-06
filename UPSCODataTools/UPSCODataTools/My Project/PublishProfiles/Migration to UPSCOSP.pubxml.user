@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>Z:\inetpub\wwwroot\UpscoTools\Jumbotron2</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/UPSCODataTools.dll">
+      <publishTime>07/21/2017 11:34:32</publishTime>
+    </File>
+    <File Include="bin/UPSCODataTools.xml">
+      <publishTime>07/21/2017 11:34:32</publishTime>
+    </File>
+    <File Include="Data Access/Common.vb">
+      <publishTime>07/20/2017 09:35:03</publishTime>
+    </File>
+    <File Include="Images/a_boos.jpg">
+      <publishTime>05/05/2017 12:26:44</publishTime>
+    </File>
+    <File Include="Images/BlackLogo.png">
+      <publishTime>05/05/2017 12:26:54</publishTime>
+    </File>
+    <File Include="Images/company50Logo.png">
+      <publishTime>05/05/2017 12:26:54</publishTime>
+    </File>
+    <File Include="Images/crown.png">
+      <publishTime>05/05/2017 12:26:54</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/Balon---White-Outline.png">
+      <publishTime>09/15/2014 13:28:47</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/Balon.png">
+      <publishTime>05/07/2014 09:29:45</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/CETCO---White-Outline.png">
+      <publishTime>09/15/2014 13:28:36</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/CETCO.png">
+      <publishTime>05/07/2014 09:29:35</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/Charter-Plastics.png">
+      <publishTime>05/07/2014 09:29:27</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/Dormont---White-Outline.png">
+      <publishTime>09/15/2014 13:27:48</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/Dormont.png">
+      <publishTime>05/07/2014 09:28:50</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/ESCI---White-Outline.png">
+      <publishTime>09/15/2014 13:27:36</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/ESCI.png">
+      <publishTime>05/07/2014 09:28:41</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/Fisher.png">
+      <publishTime>05/07/2014 09:28:34</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/Footage-Blue.png">
+      <publishTime>05/07/2014 09:28:07</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/Footage-Orange---White-Outline.png">
+      <publishTime>09/15/2014 13:27:13</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/Footage-Orange.png">
+      <publishTime>05/07/2014 09:28:25</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/GPI---White-Outline.png">
+      <publishTime>09/15/2014 13:26:48</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/GPI.png">
+      <publishTime>05/07/2014 09:27:50</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/GPT-PSI.png">
+      <publishTime>05/07/2014 09:27:41</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/Ionix---White-Outline.png">
+      <publishTime>09/15/2014 13:26:11</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/Ionix.png">
+      <publishTime>05/07/2014 09:27:05</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/King-Innovation---White-Outline.png">
+      <publishTime>09/15/2014 13:26:00</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/King-Innovation.png">
+      <publishTime>05/07/2014 09:26:57</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/Kuhlman---White-Outline.png">
+      <publishTime>09/15/2014 13:25:45</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/Kuhlman.png">
+      <publishTime>05/07/2014 09:26:46</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/McElroy---White-Outline.png">
+      <publishTime>09/15/2014 13:25:19</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/McElroy.png">
+      <publishTime>05/07/2014 09:26:21</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/Melfred-Borzall---White-Outline.png">
+      <publishTime>09/15/2014 13:25:07</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/Melfred-Borzall.png">
+      <publishTime>05/07/2014 09:26:08</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/NRI.png">
+      <publishTime>09/17/2014 12:13:22</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/PolyCam---White-Outline.png">
+      <publishTime>09/15/2014 13:24:04</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/PolyCam.png">
+      <publishTime>05/07/2014 09:25:20</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/Smith-Blair.png">
+      <publishTime>05/07/2014 09:23:37</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/Trenton---White-Outline.png">
+      <publishTime>09/15/2014 13:22:53</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/Trenton.png">
+      <publishTime>05/07/2014 09:23:24</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/Tuff-N-Nuff---White-Outline.png">
+      <publishTime>09/15/2014 13:21:57</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/Tuff-N-Nuff.png">
+      <publishTime>05/07/2014 09:22:42</publishTime>
+    </File>
+    <File Include="Images/CustomerLogos/Utilicor.png">
+      <publishTime>05/07/2014 09:23:14</publishTime>
+    </File>
+    <File Include="Images/happyNewYear.gif">
+      <publishTime>05/05/2017 12:26:54</publishTime>
+    </File>
+    <File Include="Images/snow.gif">
+      <publishTime>05/05/2017 12:26:54</publishTime>
+    </File>
+    <File Include="Images/upscoLogo.jpg">
+      <publishTime>05/05/2017 12:26:54</publishTime>
+    </File>
+    <File Include="JumboTron.aspx">
+      <publishTime>07/13/2017 15:03:18</publishTime>
+    </File>
+    <File Include="JumboTron2.aspx">
+      <publishTime>07/21/2017 10:59:25</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/05/2017 11:59:04</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>05/05/2017 11:20:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.12.4.min.js">
+      <publishTime>10/19/2016 15:50:50</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.0.js">
+      <publishTime>05/05/2017 11:56:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.0.min.js">
+      <publishTime>05/05/2017 11:56:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.0.min.map">
+      <publishTime>05/05/2017 11:56:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.0.slim.js">
+      <publishTime>05/05/2017 11:56:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.0.slim.min.js">
+      <publishTime>05/05/2017 11:56:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.0.slim.min.map">
+      <publishTime>05/05/2017 11:56:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.js">
+      <publishTime>05/05/2017 11:46:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.min.js">
+      <publishTime>05/05/2017 11:46:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.min.map">
+      <publishTime>05/05/2017 11:46:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.js">
+      <publishTime>05/05/2017 11:46:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.min.js">
+      <publishTime>05/05/2017 11:46:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.min.map">
+      <publishTime>05/05/2017 11:46:28</publishTime>
+    </File>
+    <File Include="Scripts/jumboTronScripts.js">
+      <publishTime>10/19/2016 15:50:50</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.7.2.js">
+      <publishTime>05/05/2017 11:56:18</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>05/05/2017 11:48:34</publishTime>
+    </File>
+    <File Include="Scripts/refreshTimer.js">
+      <publishTime>11/16/2016 08:47:20</publishTime>
+    </File>
+    <File Include="Style/cssReset.css">
+      <publishTime>05/05/2017 12:27:17</publishTime>
+    </File>
+    <File Include="Style/divTablesStyle.css">
+      <publishTime>07/20/2017 15:26:56</publishTime>
+    </File>
+    <File Include="Style/Jumbo2Styles.css">
+      <publishTime>07/21/2017 10:59:36</publishTime>
+    </File>
+    <File Include="Style/upscoStyle.css">
+      <publishTime>07/21/2017 09:29:02</publishTime>
+    </File>
+    <File Include="UpscoData.Master">
+      <publishTime>07/20/2017 14:59:23</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/21/2017 11:34:32</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
