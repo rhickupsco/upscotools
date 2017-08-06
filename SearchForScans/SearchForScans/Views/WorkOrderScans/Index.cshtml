@@ -1,0 +1,141 @@
+﻿@model IEnumerable<SearchForScans.Models.WorkOrderArchive>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="panel-heading">
+    <div id="box-title">
+        <h2>All Work Orders</h2>
+    </div>
+    <div id="search">
+        @using (@Html.BeginForm("Index", "WorkOrderScans", FormMethod.Get))
+        {
+        @Html.TextBox("searchBy", null, new { @class = "txtSearch" }) <input id="btnSearch" type="submit" value="Search" class="btn-primary" />
+        }
+    </div>
+
+</div>
+<div class="alert alert-info">
+    <p>
+        Select a Work Order to View Details
+    </p>
+</div>
+<div class="alert alert-success" style="margin-top: -5px;">
+    <h2>Displaying Last 30 Scans - Use Search Tool Above to display other Scans</h2>
+</div>
+<table class="table">
+    <tr>
+    <th></th>
+        <th>
+           WorkOrder
+        </th>
+        <th>
+            Parent #
+        </th>
+        <th>
+            Vendor
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.FileName)
+        </th>*@
+        <th>
+           S. Labor
+        </th>
+        <th>
+           A. Labor
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.MakeForSalesOrderNumber)
+        </th>*@
+        <th>
+           Date of Work Order
+        </th>
+        <th>
+           Date Scanned
+        </th>
+        <th>
+           Item Name
+        </th>
+        <th>
+           Item Description
+        </th>
+        @*<th>
+           SO link
+        </th>*@
+        @*<th>
+            @Html.DisplayNameFor(model => model.FileStorages.FileName)
+        </th>*@
+        <th>Performance</th>
+    </tr>
+
+@foreach (var item in Model)
+{
+@functions{ 
+    public string GetFileType(string _fileType) { return _fileType == "A" ? "AttachmentImage" : ""; }
+    public string GetText(string _descText) { return _descText == "A" ? "Attachment" : "WorkOrder"; }
+    public string CompareLabor(double _standardLabor, double _actualLabor) {
+        string _over = "Red";
+        if (_standardLabor > _actualLabor)
+            _over = "Green";
+        return _over;
+    }
+    public string GetOverage(double _standardLabor, double _actualLabor) {
+        double amount = 0.00;
+        string stringValue = string.Empty;
+        string returnValue = string.Empty;
+
+        amount = ((_standardLabor - _actualLabor) / _standardLabor) * -100;
+        stringValue = String.Format("{0:0.00}", amount);
+        returnValue = stringValue + "%";
+        return returnValue;
+    }
+}
+
+  <tr>
+        <td  class="@GetFileType(item.FileType)">
+            @Html.ActionLink(GetText(item.FileType), "Details", new { id = item.Id })
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WorkOrderNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParentWorkOrderNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VendorName)
+        </td>
+        @*<td>
+                @Html.DisplayFor(modelItem => item.FileName)
+            </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.LaborHoursStandard)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LaborHoursActual)
+        </td>
+        @*<td>
+                @Html.DisplayFor(modelItem => item.MakeForSalesOrderNumber)
+            </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.WODate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScanDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ItemNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ItemDescription)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.SalesOrderNumber)
+        </td>*@
+        <td class="@CompareLabor(Convert.ToDouble(item.LaborHoursStandard),Convert.ToDouble(item.LaborHoursActual))">
+            @GetOverage(Convert.ToDouble(item.LaborHoursStandard), Convert.ToDouble(item.LaborHoursActual))
+          </td>
+    </tr>
+    }
+
+</table>

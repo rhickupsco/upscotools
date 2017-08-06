@@ -1,0 +1,10 @@
+C:\UPSCOSourceControl\DocScan\DocScan\bin\x86\Debug\DocScan.exe.config
+C:\UPSCOSourceControl\DocScan\DocScan\bin\x86\Debug\DocScan.exe
+C:\UPSCOSourceControl\DocScan\DocScan\bin\x86\Debug\DocScan.pdb
+C:\UPSCOSourceControl\DocScan\DocScan\obj\x86\Debug\DocScanSO.csprojResolveAssemblyReference.cache
+C:\UPSCOSourceControl\DocScan\DocScan\obj\x86\Debug\DocScanSO.frmMain.resources
+C:\UPSCOSourceControl\DocScan\DocScan\obj\x86\Debug\DocScan.Properties.Resources.resources
+C:\UPSCOSourceControl\DocScan\DocScan\obj\x86\Debug\DocScanSO.Splash.resources
+C:\UPSCOSourceControl\DocScan\DocScan\obj\x86\Debug\DocScanSO.csproj.GenerateResource.Cache
+C:\UPSCOSourceControl\DocScan\DocScan\obj\x86\Debug\DocScan.exe
+C:\UPSCOSourceControl\DocScan\DocScan\obj\x86\Debug\DocScan.pdb

@@ -1,0 +1,229 @@
+
+-- --------------------------------------------------
+-- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
+-- --------------------------------------------------
+-- Date Created: 11/09/2016 15:56:34
+-- Generated from EDMX file: C:\Users\rhickman\Documents\Visual Studio 2015\WebSites\Scaffolding\App_Code\EquipmentInventory.edmx
+-- --------------------------------------------------
+
+SET QUOTED_IDENTIFIER OFF;
+GO
+USE [EquipmentInventoryManager];
+GO
+IF SCHEMA_ID(N'dbo') IS NULL EXECUTE(N'CREATE SCHEMA [dbo]');
+GO
+
+-- --------------------------------------------------
+-- Dropping existing FOREIGN KEY constraints
+-- --------------------------------------------------
+
+IF OBJECT_ID(N'[dbo].[FK_MasterList_Assignees]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[MasterList] DROP CONSTRAINT [FK_MasterList_Assignees];
+GO
+IF OBJECT_ID(N'[dbo].[FK_MasterList_EquipmentTypes]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[MasterList] DROP CONSTRAINT [FK_MasterList_EquipmentTypes];
+GO
+IF OBJECT_ID(N'[dbo].[FK_Software_MasterList]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Software] DROP CONSTRAINT [FK_Software_MasterList];
+GO
+IF OBJECT_ID(N'[dbo].[FK_Specs_MasterList]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Specs] DROP CONSTRAINT [FK_Specs_MasterList];
+GO
+
+-- --------------------------------------------------
+-- Dropping existing tables
+-- --------------------------------------------------
+
+IF OBJECT_ID(N'[dbo].[Assignees]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Assignees];
+GO
+IF OBJECT_ID(N'[dbo].[EquipmentTypes]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[EquipmentTypes];
+GO
+IF OBJECT_ID(N'[dbo].[MasterList]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[MasterList];
+GO
+IF OBJECT_ID(N'[dbo].[Software]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Software];
+GO
+IF OBJECT_ID(N'[dbo].[Specs]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Specs];
+GO
+
+-- --------------------------------------------------
+-- Creating all tables
+-- --------------------------------------------------
+
+-- Creating table 'Assignees'
+CREATE TABLE [dbo].[Assignees] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [FirstName] varchar(20)  NOT NULL,
+    [LastName] varchar(20)  NOT NULL,
+    [StartDate] datetime  NULL,
+    [EndDate] datetime  NULL,
+    [PhoneExtension] varchar(4)  NULL,
+    [CellPhone] varchar(13)  NULL,
+    [OfficeLocation] varchar(50)  NULL,
+    [JobTitle] varchar(50)  NULL,
+    [UserName] varchar(50)  NULL,
+    [EmailAddress] varchar(50)  NULL,
+    [IsActive] bit  NOT NULL,
+    [InsideOrOutside] char(1)  NULL
+);
+GO
+
+-- Creating table 'EquipmentTypes'
+CREATE TABLE [dbo].[EquipmentTypes] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [TypeName] varchar(50)  NOT NULL,
+    [DefaultManufacturer] varchar(50)  NULL,
+    [DefaultBaseModel] varchar(50)  NULL,
+    [DefaultPowerModel] varchar(50)  NULL,
+    [DefaultServiceProvider] varchar(50)  NULL
+);
+GO
+
+-- Creating table 'MasterLists'
+CREATE TABLE [dbo].[MasterLists] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [AssetTag] varchar(10)  NULL,
+    [ExpressServiceTag] varchar(20)  NULL,
+    [DatePurchased] datetime  NULL,
+    [WarrantyExpiration] datetime  NULL,
+    [ManufacturerName] varchar(50)  NULL,
+    [Model] varchar(50)  NULL,
+    [CurrentLocation] varchar(50)  NULL,
+    [AssetName] varchar(20)  NULL,
+    [IsActive] bit  NULL,
+    [Assignee_Id] int  NULL,
+    [EquipmentType_Id] int  NOT NULL
+);
+GO
+
+-- Creating table 'Softwares'
+CREATE TABLE [dbo].[Softwares] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [SoftwareName] varchar(50)  NOT NULL,
+    [Version] varchar(50)  NULL,
+    [LicenseKey] varchar(50)  NULL,
+    [LicenseExpiration] datetime  NULL,
+    [MasterList_Id] int  NOT NULL
+);
+GO
+
+-- Creating table 'Specs'
+CREATE TABLE [dbo].[Specs] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [RAMType] varchar(20)  NULL,
+    [RAMAmount] int  NULL,
+    [OperatingSystem] varchar(50)  NULL,
+    [HardDriveType] varchar(20)  NULL,
+    [FormFactor] varchar(20)  NULL,
+    [Processor] varchar(50)  NULL,
+    [HardDriveSize] float  NULL,
+    [RaidConfiguration] varchar(5)  NULL,
+    [MasterList_Id] int  NOT NULL
+);
+GO
+
+-- --------------------------------------------------
+-- Creating all PRIMARY KEY constraints
+-- --------------------------------------------------
+
+-- Creating primary key on [Id] in table 'Assignees'
+ALTER TABLE [dbo].[Assignees]
+ADD CONSTRAINT [PK_Assignees]
+    PRIMARY KEY CLUSTERED ([Id] ASC);
+GO
+
+-- Creating primary key on [Id] in table 'EquipmentTypes'
+ALTER TABLE [dbo].[EquipmentTypes]
+ADD CONSTRAINT [PK_EquipmentTypes]
+    PRIMARY KEY CLUSTERED ([Id] ASC);
+GO
+
+-- Creating primary key on [Id] in table 'MasterLists'
+ALTER TABLE [dbo].[MasterLists]
+ADD CONSTRAINT [PK_MasterLists]
+    PRIMARY KEY CLUSTERED ([Id] ASC);
+GO
+
+-- Creating primary key on [Id] in table 'Softwares'
+ALTER TABLE [dbo].[Softwares]
+ADD CONSTRAINT [PK_Softwares]
+    PRIMARY KEY CLUSTERED ([Id] ASC);
+GO
+
+-- Creating primary key on [Id] in table 'Specs'
+ALTER TABLE [dbo].[Specs]
+ADD CONSTRAINT [PK_Specs]
+    PRIMARY KEY CLUSTERED ([Id] ASC);
+GO
+
+-- --------------------------------------------------
+-- Creating all FOREIGN KEY constraints
+-- --------------------------------------------------
+
+-- Creating foreign key on [Assignee_Id] in table 'MasterLists'
+ALTER TABLE [dbo].[MasterLists]
+ADD CONSTRAINT [FK_MasterList_Assignees]
+    FOREIGN KEY ([Assignee_Id])
+    REFERENCES [dbo].[Assignees]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_MasterList_Assignees'
+CREATE INDEX [IX_FK_MasterList_Assignees]
+ON [dbo].[MasterLists]
+    ([Assignee_Id]);
+GO
+
+-- Creating foreign key on [EquipmentType_Id] in table 'MasterLists'
+ALTER TABLE [dbo].[MasterLists]
+ADD CONSTRAINT [FK_MasterList_EquipmentTypes]
+    FOREIGN KEY ([EquipmentType_Id])
+    REFERENCES [dbo].[EquipmentTypes]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_MasterList_EquipmentTypes'
+CREATE INDEX [IX_FK_MasterList_EquipmentTypes]
+ON [dbo].[MasterLists]
+    ([EquipmentType_Id]);
+GO
+
+-- Creating foreign key on [MasterList_Id] in table 'Softwares'
+ALTER TABLE [dbo].[Softwares]
+ADD CONSTRAINT [FK_Software_MasterList]
+    FOREIGN KEY ([MasterList_Id])
+    REFERENCES [dbo].[MasterLists]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_Software_MasterList'
+CREATE INDEX [IX_FK_Software_MasterList]
+ON [dbo].[Softwares]
+    ([MasterList_Id]);
+GO
+
+-- Creating foreign key on [MasterList_Id] in table 'Specs'
+ALTER TABLE [dbo].[Specs]
+ADD CONSTRAINT [FK_Specs_MasterList]
+    FOREIGN KEY ([MasterList_Id])
+    REFERENCES [dbo].[MasterLists]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_Specs_MasterList'
+CREATE INDEX [IX_FK_Specs_MasterList]
+ON [dbo].[Specs]
+    ([MasterList_Id]);
+GO
+
+-- --------------------------------------------------
+-- Script has ended
+-- --------------------------------------------------

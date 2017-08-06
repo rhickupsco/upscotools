@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f22d162fcb874dfba5c2693f27b964ca" Name="Diagram1">
+        <EntityTypeShape EntityType="EquipmentInventoryModel.Assignee" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EquipmentInventoryModel.EquipmentType" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EquipmentInventoryModel.MasterList" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EquipmentInventoryModel.Software" Width="1.5" PointX="5.25" PointY="3" IsExpanded="true" />
+        <AssociationConnector Association="EquipmentInventoryModel.FK_MasterList_Assignees" ManuallyRouted="false" />
+        <AssociationConnector Association="EquipmentInventoryModel.FK_MasterList_EquipmentTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="EquipmentInventoryModel.FK_Software_MasterList" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="EquipmentInventoryModel.Spec" Width="1.5" PointX="5.25" PointY="6.5" />
+        <AssociationConnector Association="EquipmentInventoryModel.FK_Specs_MasterList" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

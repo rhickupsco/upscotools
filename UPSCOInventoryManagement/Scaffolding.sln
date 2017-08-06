@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Scaffolding", "C:\UPSCOSourceControl\UPSCOInventoryManagement\Scaffolding", "{CBB32DE2-4CC9-4D64-BE7D-D69B5F2044B0}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51071"
+		Debug.AspNetCompiler.PhysicalPath = "Scaffolding\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51071\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51071"
+		Release.AspNetCompiler.PhysicalPath = "Scaffolding\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51071\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51071"
+		SlnRelativePath = "Scaffolding\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBB32DE2-4CC9-4D64-BE7D-D69B5F2044B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBB32DE2-4CC9-4D64-BE7D-D69B5F2044B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://randihickman.visualstudio.com/
+		SccLocalPath0 = .
+		SccWebProject1 = true
+		SccProjectUniqueName1 = Scaffolding
+		SccProjectName1 = Scaffolding
+		SccLocalPath1 = Scaffolding
+		SccProjectEnlistmentChoice1 = 2
+	EndGlobalSection
+EndGlobal

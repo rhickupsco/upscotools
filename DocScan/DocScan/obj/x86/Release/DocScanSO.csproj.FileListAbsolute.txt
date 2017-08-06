@@ -1,0 +1,20 @@
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\DocScan\DocScan\bin\x86\Release\DocScan.exe.config
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\DocScan\DocScan\bin\x86\Release\DocScan.exe
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\DocScan\DocScan\bin\x86\Release\DocScan.pdb
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\DocScan\DocScan\obj\x86\Release\DocScanSO.frmMain.resources
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\DocScan\DocScan\obj\x86\Release\DocScan.Properties.Resources.resources
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\DocScan\DocScan\obj\x86\Release\DocScanSO.Splash.resources
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\DocScan\DocScan\obj\x86\Release\DocScanSO.csproj.GenerateResource.Cache
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\DocScan\DocScan\obj\x86\Release\DocScan.exe
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\DocScan\DocScan\obj\x86\Release\DocScan.pdb
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\DocScan\DocScan\obj\x86\Release\DocScanSO.csprojResolveAssemblyReference.cache
+C:\UPSCOSourceControl\DocScan\DocScan\bin\x86\Release\DocScan.exe.config
+C:\UPSCOSourceControl\DocScan\DocScan\obj\x86\Release\DocScan.exe
+C:\UPSCOSourceControl\DocScan\DocScan\obj\x86\Release\DocScan.pdb
+C:\UPSCOSourceControl\DocScan\DocScan\bin\x86\Release\DocScan.exe
+C:\UPSCOSourceControl\DocScan\DocScan\bin\x86\Release\DocScan.pdb
+C:\UPSCOSourceControl\DocScan\DocScan\obj\x86\Release\DocScanSO.csprojResolveAssemblyReference.cache
+C:\UPSCOSourceControl\DocScan\DocScan\obj\x86\Release\DocScanSO.frmMain.resources
+C:\UPSCOSourceControl\DocScan\DocScan\obj\x86\Release\DocScan.Properties.Resources.resources
+C:\UPSCOSourceControl\DocScan\DocScan\obj\x86\Release\DocScanSO.Splash.resources
+C:\UPSCOSourceControl\DocScan\DocScan\obj\x86\Release\DocScanSO.csproj.GenerateResource.Cache

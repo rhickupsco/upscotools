@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DocScanArchiveModelStoreContainer" CdmEntityContainer="DocScanArchiveEntities">
+    <EntitySetMapping Name="FileStorages">
+      <EntityTypeMapping TypeName="DocScanArchiveModel.FileStorage">
+        <MappingFragment StoreEntitySet="FileStorage">
+          <ScalarProperty Name="FileId" ColumnName="FileId" />
+          <ScalarProperty Name="File" ColumnName="File" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesOrderArchives">
+      <EntityTypeMapping TypeName="DocScanArchiveModel.SalesOrderArchive">
+        <MappingFragment StoreEntitySet="SalesOrderArchive">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SalesOrderNumber" ColumnName="SalesOrderNumber" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+          <ScalarProperty Name="SODate" ColumnName="SODate" />
+          <ScalarProperty Name="ScanDate" ColumnName="ScanDate" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FileType" ColumnName="FileType" />
+          <ScalarProperty Name="FileID" ColumnName="FileID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SetupInfoes">
+      <EntityTypeMapping TypeName="DocScanArchiveModel.SetupInfo">
+        <MappingFragment StoreEntitySet="SetupInfo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="operatorName" ColumnName="operatorName" />
+          <ScalarProperty Name="watchFileLocation" ColumnName="watchFileLocation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkOrderArchives">
+      <EntityTypeMapping TypeName="DocScanArchiveModel.WorkOrderArchive">
+        <MappingFragment StoreEntitySet="WorkOrderArchive">
+          <ScalarProperty Name="ScanDate" ColumnName="ScanDate" />
+          <ScalarProperty Name="WODate" ColumnName="WODate" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="WorkOrderNumber" ColumnName="WorkOrderNumber" />
+          <ScalarProperty Name="ParentWorkOrderNumber" ColumnName="ParentWorkOrderNumber" />
+          <ScalarProperty Name="SalesOrderNumber" ColumnName="SalesOrderNumber" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+          <ScalarProperty Name="LaborHoursStandard" ColumnName="LaborHoursStandard" />
+          <ScalarProperty Name="LaborHoursActual" ColumnName="LaborHoursActual" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FileType" ColumnName="FileType" />
+          <ScalarProperty Name="FileId" ColumnName="FileId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

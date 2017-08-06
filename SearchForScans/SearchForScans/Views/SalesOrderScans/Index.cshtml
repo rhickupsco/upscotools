@@ -1,0 +1,84 @@
+﻿@model IEnumerable<SearchForScans.Models.SalesOrderArchive>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="panel-heading">
+    <div id="box-title">
+        <h2>All Sales Orders</h2>
+    </div>
+    <div id="search">
+        @using (@Html.BeginForm("Index", "SalesOrderScans", FormMethod.Get))
+        {
+        @Html.TextBox("searchBy", null, new { @class = "txtSearch" }) <input id="btnSearch" type="submit" value="Search" class="btn-primary" />
+        }
+    </div>
+
+</div>
+<div class="alert alert-info">
+    <p>
+        Select a Sales Order to View Details
+    </p>
+</div>
+<div class="alert alert-success" style="margin-top: -5px;">
+    <h2>Displaying Last 30 Scans - Use Search Tool Above to display other Scans</h2>
+</div>
+<table class="table">
+    <tr>
+    <th></th>
+        <th>
+            @Html.DisplayNameFor(model => model.SalesOrderNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VendorName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FileName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FileType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SODate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ScanDate)
+        </th>
+       
+       
+    </tr>
+
+@foreach (var item in Model)
+{
+    @functions{
+        public string GetFileType(string _fileType) { return _fileType == "A" ? "AttachmentImage" : ""; }
+        public string GetText(string _descText) { return _descText == "A" ? "Attachment" : "SalesOrder"; }
+    }
+    <tr>
+        <td class="@GetFileType(item.FileType)">
+            @Html.ActionLink(GetText(item.FileType), "Details", new { id = item.Id })
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SalesOrderNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VendorName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FileName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FileType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SODate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScanDate)
+        </td>
+      
+    </tr>
+}
+
+</table>

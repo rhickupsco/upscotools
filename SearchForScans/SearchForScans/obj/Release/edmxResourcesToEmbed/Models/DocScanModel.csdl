@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DocScanArchiveModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="FileStorage">
+    <Key>
+      <PropertyRef Name="FileId" />
+    </Key>
+    <Property Name="FileId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="File" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="Notes" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SalesOrderArchive">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SalesOrderNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VendorName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SODate" Type="DateTime" Precision="0" />
+    <Property Name="ScanDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FileName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FileType" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FileID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SetupInfo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="operatorName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="watchFileLocation" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WorkOrderArchive">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WorkOrderNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ParentWorkOrderNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SalesOrderNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="VendorName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LaborHoursStandard" Type="Double" />
+    <Property Name="LaborHoursActual" Type="Double" />
+    <Property Name="WODate" Type="DateTime" Precision="0" />
+    <Property Name="ScanDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ItemNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ItemDescription" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="FileName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FileType" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FileId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DocScanArchiveEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="FileStorages" EntityType="Self.FileStorage" />
+    <EntitySet Name="SalesOrderArchives" EntityType="Self.SalesOrderArchive" />
+    <EntitySet Name="SetupInfoes" EntityType="Self.SetupInfo" />
+    <EntitySet Name="WorkOrderArchives" EntityType="Self.WorkOrderArchive" />
+  </EntityContainer>
+</Schema>

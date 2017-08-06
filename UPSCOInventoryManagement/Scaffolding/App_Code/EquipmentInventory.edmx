@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="EquipmentInventoryModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityContainer Name="EquipmentInventoryModelStoreContainer">
+    <EntitySet Name="Assignees" EntityType="EquipmentInventoryModel.Store.Assignees" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EquipmentTypes" EntityType="EquipmentInventoryModel.Store.EquipmentTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MasterLists" EntityType="EquipmentInventoryModel.Store.MasterLists" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Softwares" EntityType="EquipmentInventoryModel.Store.Softwares" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Specs" EntityType="EquipmentInventoryModel.Store.Specs" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_MasterList_Assignees" Association="EquipmentInventoryModel.Store.FK_MasterList_Assignees">
+      <End Role="Assignees" EntitySet="Assignees" />
+      <End Role="MasterList" EntitySet="MasterLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MasterList_EquipmentTypes" Association="EquipmentInventoryModel.Store.FK_MasterList_EquipmentTypes">
+      <End Role="EquipmentTypes" EntitySet="EquipmentTypes" />
+      <End Role="MasterList" EntitySet="MasterLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Software_MasterList" Association="EquipmentInventoryModel.Store.FK_Software_MasterList">
+      <End Role="MasterList" EntitySet="MasterLists" />
+      <End Role="Software" EntitySet="Softwares" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Specs_MasterList" Association="EquipmentInventoryModel.Store.FK_Specs_MasterList">
+      <End Role="MasterList" EntitySet="MasterLists" />
+      <End Role="Spec" EntitySet="Specs" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Assignees">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="LastName" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="StartDate" Type="datetime" Nullable="true" />
+    <Property Name="EndDate" Type="datetime" Nullable="true" />
+    <Property Name="PhoneExtension" Type="varchar" Nullable="true" MaxLength="4" />
+    <Property Name="CellPhone" Type="varchar" Nullable="true" MaxLength="13" />
+    <Property Name="OfficeLocation" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="JobTitle" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="UserName" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="EmailAddress" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="InsideOrOutside" Type="char" Nullable="true" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="EquipmentTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TypeName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="DefaultManufacturer" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="DefaultBaseModel" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="DefaultPowerModel" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="DefaultServiceProvider" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MasterLists">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AssetTag" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="ExpressServiceTag" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="DatePurchased" Type="datetime" Nullable="true" />
+    <Property Name="WarrantyExpiration" Type="datetime" Nullable="true" />
+    <Property Name="ManufacturerName" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Model" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="CurrentLocation" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="AssetName" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="IsActive" Type="bit" Nullable="true" />
+    <Property Name="Assignee_Id" Type="int" Nullable="true" />
+    <Property Name="EquipmentType_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Softwares">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SoftwareName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Version" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="LicenseKey" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="LicenseExpiration" Type="datetime" Nullable="true" />
+    <Property Name="MasterList_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Specs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RAMType" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="RAMAmount" Type="int" Nullable="true" />
+    <Property Name="OperatingSystem" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="HardDriveType" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="FormFactor" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="Processor" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="HardDriveSize" Type="float" Nullable="true" />
+    <Property Name="RaidConfiguration" Type="varchar" Nullable="true" MaxLength="5" />
+    <Property Name="MasterList_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_MasterList_Assignees">
+    <End Role="Assignees" Type="EquipmentInventoryModel.Store.Assignees" Multiplicity="0..1" />
+    <End Role="MasterList" Type="EquipmentInventoryModel.Store.MasterLists" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Assignees">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MasterList">
+        <PropertyRef Name="Assignee_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MasterList_EquipmentTypes">
+    <End Role="EquipmentTypes" Type="EquipmentInventoryModel.Store.EquipmentTypes" Multiplicity="1" />
+    <End Role="MasterList" Type="EquipmentInventoryModel.Store.MasterLists" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EquipmentTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MasterList">
+        <PropertyRef Name="EquipmentType_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Software_MasterList">
+    <End Role="MasterList" Type="EquipmentInventoryModel.Store.MasterLists" Multiplicity="1" />
+    <End Role="Software" Type="EquipmentInventoryModel.Store.Softwares" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterList">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Software">
+        <PropertyRef Name="MasterList_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Specs_MasterList">
+    <End Role="MasterList" Type="EquipmentInventoryModel.Store.MasterLists" Multiplicity="1" />
+    <End Role="Spec" Type="EquipmentInventoryModel.Store.Specs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterList">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Spec">
+        <PropertyRef Name="MasterList_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EquipmentInventoryModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+        <EntityType Name="Assignee">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="StartDate" Type="DateTime" Precision="0" />
+          <Property Name="EndDate" Type="DateTime" Precision="0" />
+          <Property Name="PhoneExtension" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="CellPhone" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+          <Property Name="OfficeLocation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="JobTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="EmailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="InsideOrOutside" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="MasterLists" Relationship="Self.FK_MasterList_Assignees" FromRole="Assignees" ToRole="MasterList" />
+        </EntityType>
+        <EntityType Name="EquipmentType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DefaultManufacturer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DefaultBaseModel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DefaultPowerModel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DefaultServiceProvider" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="MasterLists" Relationship="Self.FK_MasterList_EquipmentTypes" FromRole="EquipmentTypes" ToRole="MasterList" />
+        </EntityType>
+        <EntityType Name="MasterList">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AssetTag" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ExpressServiceTag" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DatePurchased" Type="DateTime" Precision="0" />
+          <Property Name="WarrantyExpiration" Type="DateTime" Precision="0" />
+          <Property Name="ManufacturerName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CurrentLocation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AssetName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="IsActive" Type="Boolean" />
+          <NavigationProperty Name="Assignee" Relationship="Self.FK_MasterList_Assignees" FromRole="MasterList" ToRole="Assignees" />
+          <NavigationProperty Name="EquipmentType" Relationship="Self.FK_MasterList_EquipmentTypes" FromRole="MasterList" ToRole="EquipmentTypes" />
+          <NavigationProperty Name="Softwares" Relationship="Self.FK_Software_MasterList" FromRole="MasterList" ToRole="Software" />
+          <NavigationProperty Name="Specs" Relationship="EquipmentInventoryModel.FK_Specs_MasterList" FromRole="MasterList" ToRole="Spec" />
+        </EntityType>
+        <EntityType Name="Software">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SoftwareName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Version" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LicenseKey" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LicenseExpiration" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="MasterList" Relationship="Self.FK_Software_MasterList" FromRole="Software" ToRole="MasterList" />
+        </EntityType>
+        <Association Name="FK_MasterList_Assignees">
+          <End Role="Assignees" Type="Self.Assignee" Multiplicity="0..1" />
+          <End Role="MasterList" Type="Self.MasterList" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_MasterList_EquipmentTypes">
+          <End Role="EquipmentTypes" Type="Self.EquipmentType" Multiplicity="1" />
+          <End Role="MasterList" Type="Self.MasterList" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_Software_MasterList">
+          <End Role="MasterList" Type="Self.MasterList" Multiplicity="1" />
+          <End Role="Software" Type="Self.Software" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="EquipmentInventoryEntities">
+          <EntitySet Name="Assignees" EntityType="Self.Assignee" />
+          <EntitySet Name="EquipmentTypes" EntityType="Self.EquipmentType" />
+          <EntitySet Name="MasterLists" EntityType="Self.MasterList" />
+          <EntitySet Name="Softwares" EntityType="Self.Software" />
+          <AssociationSet Name="FK_MasterList_Assignees" Association="Self.FK_MasterList_Assignees">
+            <End Role="Assignees" EntitySet="Assignees" />
+            <End Role="MasterList" EntitySet="MasterLists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MasterList_EquipmentTypes" Association="Self.FK_MasterList_EquipmentTypes">
+            <End Role="EquipmentTypes" EntitySet="EquipmentTypes" />
+            <End Role="MasterList" EntitySet="MasterLists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Software_MasterList" Association="Self.FK_Software_MasterList">
+            <End Role="MasterList" EntitySet="MasterLists" />
+            <End Role="Software" EntitySet="Softwares" />
+          </AssociationSet>
+          <EntitySet Name="Specs" EntityType="EquipmentInventoryModel.Spec" />
+          <AssociationSet Name="FK_Specs_MasterList" Association="EquipmentInventoryModel.FK_Specs_MasterList">
+            <End Role="MasterList" EntitySet="MasterLists" />
+            <End Role="Spec" EntitySet="Specs" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Spec">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RAMType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="RAMAmount" Type="Int32" />
+          <Property Name="OperatingSystem" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HardDriveType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="FormFactor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Processor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HardDriveSize" Type="Double" />
+          <Property Name="RaidConfiguration" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="MasterList" Relationship="EquipmentInventoryModel.FK_Specs_MasterList" FromRole="Spec" ToRole="MasterList" />
+        </EntityType>
+        <Association Name="FK_Specs_MasterList">
+          <End Type="EquipmentInventoryModel.MasterList" Role="MasterList" Multiplicity="1" />
+          <End Type="EquipmentInventoryModel.Spec" Role="Spec" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="EquipmentInventoryModelStoreContainer" CdmEntityContainer="EquipmentInventoryEntities">
+    <EntitySetMapping Name="Assignees">
+      <EntityTypeMapping TypeName="IsTypeOf(EquipmentInventoryModel.Assignee)">
+        <MappingFragment StoreEntitySet="Assignees">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="PhoneExtension" ColumnName="PhoneExtension" />
+          <ScalarProperty Name="CellPhone" ColumnName="CellPhone" />
+          <ScalarProperty Name="OfficeLocation" ColumnName="OfficeLocation" />
+          <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="InsideOrOutside" ColumnName="InsideOrOutside" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EquipmentTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(EquipmentInventoryModel.EquipmentType)">
+        <MappingFragment StoreEntitySet="EquipmentTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="DefaultManufacturer" ColumnName="DefaultManufacturer" />
+          <ScalarProperty Name="DefaultBaseModel" ColumnName="DefaultBaseModel" />
+          <ScalarProperty Name="DefaultPowerModel" ColumnName="DefaultPowerModel" />
+          <ScalarProperty Name="DefaultServiceProvider" ColumnName="DefaultServiceProvider" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterLists">
+      <EntityTypeMapping TypeName="IsTypeOf(EquipmentInventoryModel.MasterList)">
+        <MappingFragment StoreEntitySet="MasterLists">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AssetTag" ColumnName="AssetTag" />
+          <ScalarProperty Name="ExpressServiceTag" ColumnName="ExpressServiceTag" />
+          <ScalarProperty Name="DatePurchased" ColumnName="DatePurchased" />
+          <ScalarProperty Name="WarrantyExpiration" ColumnName="WarrantyExpiration" />
+          <ScalarProperty Name="ManufacturerName" ColumnName="ManufacturerName" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="CurrentLocation" ColumnName="CurrentLocation" />
+          <ScalarProperty Name="AssetName" ColumnName="AssetName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Softwares">
+      <EntityTypeMapping TypeName="IsTypeOf(EquipmentInventoryModel.Software)">
+        <MappingFragment StoreEntitySet="Softwares">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SoftwareName" ColumnName="SoftwareName" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="LicenseKey" ColumnName="LicenseKey" />
+          <ScalarProperty Name="LicenseExpiration" ColumnName="LicenseExpiration" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Specs">
+      <EntityTypeMapping TypeName="IsTypeOf(EquipmentInventoryModel.Spec)">
+        <MappingFragment StoreEntitySet="Specs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RAMType" ColumnName="RAMType" />
+          <ScalarProperty Name="RAMAmount" ColumnName="RAMAmount" />
+          <ScalarProperty Name="OperatingSystem" ColumnName="OperatingSystem" />
+          <ScalarProperty Name="HardDriveType" ColumnName="HardDriveType" />
+          <ScalarProperty Name="FormFactor" ColumnName="FormFactor" />
+          <ScalarProperty Name="Processor" ColumnName="Processor" />
+          <ScalarProperty Name="HardDriveSize" ColumnName="HardDriveSize" />
+          <ScalarProperty Name="RaidConfiguration" ColumnName="RaidConfiguration" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_MasterList_Assignees" TypeName="EquipmentInventoryModel.FK_MasterList_Assignees" StoreEntitySet="MasterLists">
+      <EndProperty Name="Assignees">
+        <ScalarProperty Name="Id" ColumnName="Assignee_Id" />
+      </EndProperty>
+      <EndProperty Name="MasterList">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="Assignee_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_MasterList_EquipmentTypes" TypeName="EquipmentInventoryModel.FK_MasterList_EquipmentTypes" StoreEntitySet="MasterLists">
+      <EndProperty Name="EquipmentTypes">
+        <ScalarProperty Name="Id" ColumnName="EquipmentType_Id" />
+      </EndProperty>
+      <EndProperty Name="MasterList">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Software_MasterList" TypeName="EquipmentInventoryModel.FK_Software_MasterList" StoreEntitySet="Softwares">
+      <EndProperty Name="MasterList">
+        <ScalarProperty Name="Id" ColumnName="MasterList_Id" />
+      </EndProperty>
+      <EndProperty Name="Software">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Specs_MasterList" TypeName="EquipmentInventoryModel.FK_Specs_MasterList" StoreEntitySet="Specs">
+      <EndProperty Name="MasterList">
+        <ScalarProperty Name="Id" ColumnName="MasterList_Id" />
+      </EndProperty>
+      <EndProperty Name="Spec">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="false" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

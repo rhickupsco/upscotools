@@ -1,0 +1,10 @@
+C:\Users\rhickman\documents\visual studio 2015\Projects\DocScan\DocScan\bin\Debug\DocScan.exe.config
+C:\Users\rhickman\documents\visual studio 2015\Projects\DocScan\DocScan\bin\Debug\DocScan.exe
+C:\Users\rhickman\documents\visual studio 2015\Projects\DocScan\DocScan\bin\Debug\DocScan.pdb
+C:\Users\rhickman\documents\visual studio 2015\Projects\DocScan\DocScan\obj\Debug\DocScan.frmMain.resources
+C:\Users\rhickman\documents\visual studio 2015\Projects\DocScan\DocScan\obj\Debug\DocScan.Properties.Resources.resources
+C:\Users\rhickman\documents\visual studio 2015\Projects\DocScan\DocScan\obj\Debug\DocScan.csproj.GenerateResource.Cache
+C:\Users\rhickman\documents\visual studio 2015\Projects\DocScan\DocScan\obj\Debug\DocScan.exe
+C:\Users\rhickman\documents\visual studio 2015\Projects\DocScan\DocScan\obj\Debug\DocScan.pdb
+C:\Users\rhickman\documents\visual studio 2015\Projects\DocScan\DocScan\obj\Debug\DocScan.csprojResolveAssemblyReference.cache
+C:\Users\rhickman\documents\visual studio 2015\Projects\DocScan\DocScan\obj\Debug\DocScan.Splash.resources

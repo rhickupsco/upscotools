@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DocScanArchiveModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="FileStorage">
+          <Key>
+            <PropertyRef Name="FileId" />
+          </Key>
+          <Property Name="FileId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="File" Type="varbinary(max)" Nullable="false" />
+          <Property Name="Notes" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="SalesOrderArchive">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SalesOrderNumber" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="VendorName" Type="varchar" MaxLength="50" />
+          <Property Name="SODate" Type="date" />
+          <Property Name="ScanDate" Type="datetime" Nullable="false" />
+          <Property Name="FileName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="FileType" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="FileID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SetupInfo">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="operatorName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="watchFileLocation" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="WorkOrderArchive">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="WorkOrderNumber" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="ParentWorkOrderNumber" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="SalesOrderNumber" Type="varchar" MaxLength="10" />
+          <Property Name="VendorName" Type="varchar" MaxLength="50" />
+          <Property Name="LaborHoursStandard" Type="float" />
+          <Property Name="LaborHoursActual" Type="float" />
+          <Property Name="WODate" Type="date" />
+          <Property Name="ScanDate" Type="datetime" Nullable="false" />
+          <Property Name="ItemNumber" Type="varchar" MaxLength="50" />
+          <Property Name="ItemDescription" Type="varchar" MaxLength="100" />
+          <Property Name="FileName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="FileType" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="FileId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="DocScanArchiveModelStoreContainer">
+          <EntitySet Name="FileStorage" EntityType="Self.FileStorage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SalesOrderArchive" EntityType="Self.SalesOrderArchive" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SetupInfo" EntityType="Self.SetupInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WorkOrderArchive" EntityType="Self.WorkOrderArchive" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DocScanArchiveModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="FileStorage">
+          <Key>
+            <PropertyRef Name="FileId" />
+          </Key>
+          <Property Name="FileId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="File" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+          <Property Name="Notes" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="SalesOrderArchive">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SalesOrderNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="VendorName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SODate" Type="DateTime" Precision="0" />
+          <Property Name="ScanDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FileName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FileType" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="FileID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SetupInfo">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="operatorName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="watchFileLocation" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="WorkOrderArchive">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WorkOrderNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ParentWorkOrderNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SalesOrderNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="VendorName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LaborHoursStandard" Type="Double" />
+          <Property Name="LaborHoursActual" Type="Double" />
+          <Property Name="WODate" Type="DateTime" Precision="0" />
+          <Property Name="ScanDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ItemNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ItemDescription" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="FileName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FileType" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="FileId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="DocScanArchiveEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="FileStorages" EntityType="Self.FileStorage" />
+          <EntitySet Name="SalesOrderArchives" EntityType="Self.SalesOrderArchive" />
+          <EntitySet Name="SetupInfoes" EntityType="Self.SetupInfo" />
+          <EntitySet Name="WorkOrderArchives" EntityType="Self.WorkOrderArchive" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DocScanArchiveModelStoreContainer" CdmEntityContainer="DocScanArchiveEntities">
+          <EntitySetMapping Name="FileStorages">
+            <EntityTypeMapping TypeName="DocScanArchiveModel.FileStorage">
+              <MappingFragment StoreEntitySet="FileStorage">
+                <ScalarProperty Name="FileId" ColumnName="FileId" />
+                <ScalarProperty Name="File" ColumnName="File" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SalesOrderArchives">
+            <EntityTypeMapping TypeName="DocScanArchiveModel.SalesOrderArchive">
+              <MappingFragment StoreEntitySet="SalesOrderArchive">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="SalesOrderNumber" ColumnName="SalesOrderNumber" />
+                <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+                <ScalarProperty Name="SODate" ColumnName="SODate" />
+                <ScalarProperty Name="ScanDate" ColumnName="ScanDate" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="FileType" ColumnName="FileType" />
+                <ScalarProperty Name="FileID" ColumnName="FileID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SetupInfoes">
+            <EntityTypeMapping TypeName="DocScanArchiveModel.SetupInfo">
+              <MappingFragment StoreEntitySet="SetupInfo">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="operatorName" ColumnName="operatorName" />
+                <ScalarProperty Name="watchFileLocation" ColumnName="watchFileLocation" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WorkOrderArchives">
+            <EntityTypeMapping TypeName="DocScanArchiveModel.WorkOrderArchive">
+              <MappingFragment StoreEntitySet="WorkOrderArchive">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="WorkOrderNumber" ColumnName="WorkOrderNumber" />
+                <ScalarProperty Name="ParentWorkOrderNumber" ColumnName="ParentWorkOrderNumber" />
+                <ScalarProperty Name="SalesOrderNumber" ColumnName="SalesOrderNumber" />
+                <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+                <ScalarProperty Name="LaborHoursStandard" ColumnName="LaborHoursStandard" />
+                <ScalarProperty Name="LaborHoursActual" ColumnName="LaborHoursActual" />
+                <ScalarProperty Name="WODate" ColumnName="WODate" />
+                <ScalarProperty Name="ScanDate" ColumnName="ScanDate" />
+                <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+                <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="FileType" ColumnName="FileType" />
+                <ScalarProperty Name="FileId" ColumnName="FileId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

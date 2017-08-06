@@ -1,0 +1,6 @@
+C:\UPSCOSourceControl\RSSFeedCreator\RSSFeedCreator\bin\RSSFeedCreator.dll.config
+C:\UPSCOSourceControl\RSSFeedCreator\RSSFeedCreator\bin\RSSFeedCreator.dll
+C:\UPSCOSourceControl\RSSFeedCreator\RSSFeedCreator\bin\RSSFeedCreator.pdb
+C:\UPSCOSourceControl\RSSFeedCreator\RSSFeedCreator\obj\Debug\RSSFeedCreator.csprojResolveAssemblyReference.cache
+C:\UPSCOSourceControl\RSSFeedCreator\RSSFeedCreator\obj\Debug\RSSFeedCreator.dll
+C:\UPSCOSourceControl\RSSFeedCreator\RSSFeedCreator\obj\Debug\RSSFeedCreator.pdb

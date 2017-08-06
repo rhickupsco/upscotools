@@ -1,0 +1,14 @@
+C:\UPSCOSourceControl\DocScan\DocScanWO\bin\Release\DocScanWO.exe.config
+C:\UPSCOSourceControl\DocScan\DocScanWO\bin\Release\DocScanWO.exe
+C:\UPSCOSourceControl\DocScan\DocScanWO\bin\Release\DocScanWO.pdb
+C:\UPSCOSourceControl\DocScan\DocScanWO\bin\Release\EntityFramework.dll
+C:\UPSCOSourceControl\DocScan\DocScanWO\bin\Release\EntityFramework.SqlServer.dll
+C:\UPSCOSourceControl\DocScan\DocScanWO\bin\Release\EntityFramework.xml
+C:\UPSCOSourceControl\DocScan\DocScanWO\bin\Release\EntityFramework.SqlServer.xml
+C:\UPSCOSourceControl\DocScan\DocScanWO\obj\Release\DocScanWO.frmAutoScanHelper.resources
+C:\UPSCOSourceControl\DocScan\DocScanWO\obj\Release\DocScanWO.frmMain.resources
+C:\UPSCOSourceControl\DocScan\DocScanWO\obj\Release\DocScanWO.Properties.Resources.resources
+C:\UPSCOSourceControl\DocScan\DocScanWO\obj\Release\DocScanWO.Splash.resources
+C:\UPSCOSourceControl\DocScan\DocScanWO\obj\Release\DocScanWO.csproj.GenerateResource.Cache
+C:\UPSCOSourceControl\DocScan\DocScanWO\obj\Release\DocScanWO.exe
+C:\UPSCOSourceControl\DocScan\DocScanWO\obj\Release\DocScanWO.pdb

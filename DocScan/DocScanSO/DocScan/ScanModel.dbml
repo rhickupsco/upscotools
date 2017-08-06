@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SalesOrderScan" Class="ScanModelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ENG1\ENG1;Initial Catalog=SalesOrderScan;Persist Security Info=True;User ID=scanner;Context Connection=False" SettingsObjectName="DocScan.Properties.Settings" SettingsPropertyName="SalesOrderScanConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SalesOrdersArchive" Member="SalesOrdersArchives">
+    <Type Name="SalesOrdersArchive">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SONumber" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="VendorName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FileName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SODate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ScanDate" AutoSync="Always" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WorkOrdersArchive" Member="WorkOrdersArchives">
+    <Type Name="WorkOrdersArchive">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="WONumber" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="SOCustomerNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CustomerName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FileName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LaborHoursStandard" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LaborHoursActual" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MakeForSalesOrderNumber" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="WODate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ScanDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SetupInfo" Member="SetupInfos">
+    <Type Name="SetupInfo">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="operatorName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="watchFileLocation" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

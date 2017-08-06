@@ -1,0 +1,10 @@
+C:\Users\rhickman\documents\visual studio 2015\Projects\DocScan\DocScan\bin\x86\Release\DocScan.exe.config
+C:\Users\rhickman\documents\visual studio 2015\Projects\DocScan\DocScan\bin\x86\Release\DocScan.exe
+C:\Users\rhickman\documents\visual studio 2015\Projects\DocScan\DocScan\bin\x86\Release\DocScan.pdb
+C:\Users\rhickman\documents\visual studio 2015\Projects\DocScan\DocScan\obj\x86\Release\DocScan.frmWOScan.resources
+C:\Users\rhickman\documents\visual studio 2015\Projects\DocScan\DocScan\obj\x86\Release\DocScan.frmMain.resources
+C:\Users\rhickman\documents\visual studio 2015\Projects\DocScan\DocScan\obj\x86\Release\DocScan.Properties.Resources.resources
+C:\Users\rhickman\documents\visual studio 2015\Projects\DocScan\DocScan\obj\x86\Release\DocScan.Splash.resources
+C:\Users\rhickman\documents\visual studio 2015\Projects\DocScan\DocScan\obj\x86\Release\DocScan.csproj.GenerateResource.Cache
+C:\Users\rhickman\documents\visual studio 2015\Projects\DocScan\DocScan\obj\x86\Release\DocScan.exe
+C:\Users\rhickman\documents\visual studio 2015\Projects\DocScan\DocScan\obj\x86\Release\DocScan.pdb

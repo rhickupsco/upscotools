@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="control-label">
+    <h1>UPSCO Scan Docs Search Center</h1>
+    <p class="lead">Scan Docs Search Center is your location to search for and view our PDF documents</p>
+    <p>Simply choose the type of document you are searching for from the menu below to start</p>
+</div>
+
+<div class="row container">
+    <div class="lead">
+        <h3>Please Choose Type</h3>       
+    </div>
+    <div id="arrow" class="col-lg-3 prettify">
+        <h2>@Html.ActionLink("Work Orders", "Index", "WorkOrderScans")</h2>       
+    </div>
+    <div id="arrow" class="col-lg-3 prettify">
+        <h2>@Html.ActionLink("Sales Orders", "Index", "SalesOrderScans")</h2>
+    </div>
+</div>

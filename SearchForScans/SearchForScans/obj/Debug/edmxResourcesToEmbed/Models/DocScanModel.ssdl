@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DocScanArchiveModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="FileStorage">
+    <Key>
+      <PropertyRef Name="FileId" />
+    </Key>
+    <Property Name="FileId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="File" Type="varbinary(max)" Nullable="false" />
+    <Property Name="Notes" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="SalesOrderArchive">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SalesOrderNumber" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="VendorName" Type="varchar" MaxLength="50" />
+    <Property Name="SODate" Type="date" />
+    <Property Name="ScanDate" Type="datetime" Nullable="false" />
+    <Property Name="FileName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FileType" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="FileID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SetupInfo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="operatorName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="watchFileLocation" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WorkOrderArchive">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WorkOrderNumber" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ParentWorkOrderNumber" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="SalesOrderNumber" Type="varchar" MaxLength="10" />
+    <Property Name="VendorName" Type="varchar" MaxLength="50" />
+    <Property Name="LaborHoursStandard" Type="float" />
+    <Property Name="LaborHoursActual" Type="float" />
+    <Property Name="WODate" Type="date" />
+    <Property Name="ScanDate" Type="datetime" Nullable="false" />
+    <Property Name="ItemNumber" Type="varchar" MaxLength="50" />
+    <Property Name="ItemDescription" Type="varchar" MaxLength="100" />
+    <Property Name="FileName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FileType" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="FileId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DocScanArchiveModelStoreContainer">
+    <EntitySet Name="FileStorage" EntityType="Self.FileStorage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SalesOrderArchive" EntityType="Self.SalesOrderArchive" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SetupInfo" EntityType="Self.SetupInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WorkOrderArchive" EntityType="Self.WorkOrderArchive" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

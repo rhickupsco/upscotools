@@ -1,0 +1,11 @@
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\DocScan\DocScan\obj\x86\Debug\DocScan.frmWOScan.resources
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\DocScan\DocScan\obj\x86\Debug\DocScan.frmMain.resources
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\DocScan\DocScan\obj\x86\Debug\DocScan.Properties.Resources.resources
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\DocScan\DocScan\obj\x86\Debug\DocScan.Splash.resources
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\DocScan\DocScan\obj\x86\Debug\DocScan.csproj.GenerateResource.Cache
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\DocScan\DocScan\bin\x86\Debug\DocScan.exe.config
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\DocScan\DocScan\bin\x86\Debug\DocScan.exe
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\DocScan\DocScan\bin\x86\Debug\DocScan.pdb
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\DocScan\DocScan\obj\x86\Debug\DocScan.csprojResolveAssemblyReference.cache
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\DocScan\DocScan\obj\x86\Debug\DocScan.exe
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\DocScan\DocScan\obj\x86\Debug\DocScan.pdb

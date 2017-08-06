@@ -1,0 +1,82 @@
+﻿@model SearchForScans.Models.SalesOrderArchive
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Here are the details for this Sales Order Scan</h2>
+
+<div>
+    <h4>Sales Orders Archive</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SalesOrderNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SalesOrderNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VendorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VendorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FileName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FileName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FileType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FileType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SODate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SODate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ScanDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ScanDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FileID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FileID)
+        </dd>     
+    </dl>
+</div>
+<p>
+  @Html.ActionLink("Back to List", "Index")
+</p>
+@*<div id="notes">
+    <a href="/PDFImage/Notes/@Html.DisplayFor(model => model.FileID)">Notes</a>
+</div>*@
+<div id="pdfViewer">
+ @*****DEV***** <a href="/PDFImage/DisplayPDF/@Html.DisplayFor(model => model.FileID)"><img src="~/Images/pdfIcon.ico" />View Your Document Here</a>*@
+    <a href="/SearchScans/PDFImage/DisplayPDF/@Html.DisplayFor(model => model.FileID)"><img src="~/Images/pdfIcon.ico" />View Your Document Here</a>
+</div>
+
+@*<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+</p>*@
+
