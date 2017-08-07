@@ -84,7 +84,7 @@ namespace DocScanWO.Data_Access
         {
             string sql = string.Empty;
 
-            sql = "SELECT WOL.WorkOrder, WOL.WODueDate, WOL.StdLaborCost, WOL.SOCustNumber, WOL.MakeForOrderNumber, WOL.ActualLaborCost, WOL.ItemBillNumber, WOL.ItemDescription, FROM WOL_WorkOrderHistoryHeader WOL WHERE(WOL.WorkOrder =?)";
+            sql = "SELECT WOL.WorkOrder, WOL.WODueDate, WOL.StdLaborCost, WOL.SOCustNumber, WOL.MakeForOrderNumber, WOL.ActualLaborCost, WOL.ItemBillNumber, WOL.ItemDescription, MakeFor FROM WOL_WorkOrderHistoryHeader WOL WHERE(WOL.WorkOrder =?)";
 
             return sql;
         }

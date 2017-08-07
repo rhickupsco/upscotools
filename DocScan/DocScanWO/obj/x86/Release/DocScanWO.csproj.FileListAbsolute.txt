@@ -21,3 +21,15 @@ C:\UPSCOSourceControl\DocScan\DocScanWO\obj\x86\Release\DocScanWO.Properties.Res
 C:\UPSCOSourceControl\DocScan\DocScanWO\obj\x86\Release\DocScanWO.Splash.resources
 C:\UPSCOSourceControl\DocScan\DocScanWO\obj\x86\Release\DocScanWO.csproj.GenerateResource.Cache
 C:\UPSCOSourceControl\DocScan\DocScanWO\obj\x86\Release\DocScanWO.exe
+C:\myGit\upscotools\DocScan\DocScanWO\bin\x86\Release\DocScanWO.exe.config
+C:\myGit\upscotools\DocScan\DocScanWO\obj\x86\Release\DocScanWO.exe
+C:\myGit\upscotools\DocScan\DocScanWO\bin\x86\Release\DocScanWO.exe
+C:\myGit\upscotools\DocScan\DocScanWO\bin\x86\Release\EntityFramework.dll
+C:\myGit\upscotools\DocScan\DocScanWO\bin\x86\Release\EntityFramework.SqlServer.dll
+C:\myGit\upscotools\DocScan\DocScanWO\bin\x86\Release\EntityFramework.xml
+C:\myGit\upscotools\DocScan\DocScanWO\bin\x86\Release\EntityFramework.SqlServer.xml
+C:\myGit\upscotools\DocScan\DocScanWO\obj\x86\Release\DocScanWO.frmAutoScanHelper.resources
+C:\myGit\upscotools\DocScan\DocScanWO\obj\x86\Release\DocScanWO.frmMain.resources
+C:\myGit\upscotools\DocScan\DocScanWO\obj\x86\Release\DocScanWO.Properties.Resources.resources
+C:\myGit\upscotools\DocScan\DocScanWO\obj\x86\Release\DocScanWO.Splash.resources
+C:\myGit\upscotools\DocScan\DocScanWO\obj\x86\Release\DocScanWO.csproj.GenerateResource.Cache
