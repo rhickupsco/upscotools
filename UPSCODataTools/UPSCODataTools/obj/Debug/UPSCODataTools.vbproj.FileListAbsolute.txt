@@ -1,2 +1,4 @@
 C:\UPSCOSourceControl\UPSCODataTools\UPSCODataTools\obj\Debug\UPSCODataTools.Resources.resources
 C:\UPSCOSourceControl\UPSCODataTools\UPSCODataTools\obj\Debug\UPSCODataTools.vbproj.GenerateResource.Cache
+C:\myGit\upscotools\UPSCODataTools\UPSCODataTools\obj\Debug\UPSCODataTools.Resources.resources
+C:\myGit\upscotools\UPSCODataTools\UPSCODataTools\obj\Debug\UPSCODataTools.vbproj.GenerateResource.Cache

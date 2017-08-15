@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class JumboTron
+Partial Public Class JumboTron2
     
     '''<summary>
     '''nipTitle control.
