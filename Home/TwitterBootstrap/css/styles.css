@@ -1,0 +1,30 @@
+.blue{
+    background-color: blue;
+    color:white;
+    font-size: 3em;
+}
+
+.red{
+    background-color: red;
+    color:white;
+    font-size: 3em;
+}
+
+.black{
+    background-color: black;
+    color:white;
+    font-size: 3em;
+}
+
+.smiley{
+    background-image: "images/icon.png"
+}
+
+.title{
+    margin-top: -20px; 
+    padding-left: 15px; 
+    background-color:white;
+    
+    margin-bottom: -10px;
+    padding-bottom:5px;
+}

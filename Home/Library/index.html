@@ -1,0 +1,45 @@
+<!doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <!-- this can be removed when IE 8 goes away -->
+            <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+            <!-- Warning: Respond.js doesn't work if you view the page via fiel:// -->
+            <!-- [if ltIE9]>
+                <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+                <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+            <![endif]-->
+
+            <script type="text/javascript">
+                
+</script>
+
+            <title>UPSCO - How To Library</title>
+            <link rel="stylesheet" href="../TwitterBootstrap/css/cssReset.css">
+            <link rel="stylesheet" href="../TwitterBootstrap/css/bootstrap.min.css">
+            <link rel="stylesheet" href="../TwitterBootstrap/css/styles.css">
+            
+            <!-- jQuery (Bootstrap JS plugins depend on this) -->
+            <script src = "../TwitterBootstrap/js/jquery-3.2.1.min.js"></script>
+            <script src = "../TwitterBootstrap/js/bootstrap.min.js"></script>     
+            <script src = "../TwitterBootstrap/js/script.js"></script>     
+            <script src = "https://www.w3schools.com/lib/w3.js"></script>
+            <script src = "../scripts/library.js"></script>
+ 
+        </head>
+        <body>
+            <div class="container-flow" w3-include-html="navBar.htm" id="videoPage"></div>
+            <script>w3.includeHTML();</script>
+            <div class="title" data-toggle="collapse" data-parent="#videoPage"><h3>Select a video to play</h3><blockquote>Video will pause automatically when your cursor leaves the page</blockquote></div>
+             <div class="embed-responsive embed-responsive-16by9" onmouseover="toggle(this)" onmouseout="toggle(this)">
+                <video style="max-height: 88%;" name="video" id="video" ></video>
+                <iframe class="embed-responsive-item" name="video" ></iframe>            
+            </div> 
+            <div id="bottom"></div> 
+        </body>
+    </html>
+
+

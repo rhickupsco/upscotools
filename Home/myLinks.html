@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta chartset="ISO-8859-1">
+<script src="scripts/jquery-3.2.1.min.js"></script> 
+<link rel="stylesheet" href="scripts/bootstrap.min.css">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+<script type="text/javascript" src="scripts/personalLinks.js"></script>
+
+<style type="text/css">
+p{
+    font-family: "helveticaNeue";
+    font-size: 1.3em;
+    margin-top: -10px;
+}
+#myLinkPanel{
+    padding-left:15px; 
+    background-image: linear-gradient(white,steelblue); 
+    border-top: solid black 23px;
+    border-radius: 5px 5px 0px 0px;
+}
+.shadow{
+    -moz-box-shadow: 5px 3px 10px 5px #ccc; 
+    -webkit-box-shadow: 5px 3px 10px 5px #ccc; 
+    box-shadow: 5px 4px 10px 5px #ccc;
+     border-radius: 5px 5px 0px 0px;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: whitesmoke;
+
+}
+a:hover{
+    color:yellow;
+}
+
+</style>
+
+<title>My Personal Links</title>
+</head>
+    <body class="shadow">
+        <div data-role="page" id="myLinkPanel" >
+            <div data-role="header" class="ui-content" style="text-align: center">
+                <h1>My Links</h1>
+            </div>
+            <div data-role="content">
+                <p><label for="linkInput">Link Name</label>
+                <p><input type="text" id="linkInput" /></p>
+                <p><label for="linkURLInput">Link Address</label></p>
+                <p><input type="text" id="linkURLInput" /></p>
+                <p><button id="add">Add Link</button>
+                <button onclick="clearAll();">Clear All Links</button></p>
+                <p><div id="message"></div></p>
+                <ul data-role="listView" id="links"></ul>
+            </div>
+            <div id="footer" data-role="footer">*This feature only works in Chrome</div>
+                    
+        </div>
+    </body>
+</html>

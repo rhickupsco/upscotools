@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script src="scripts/jquery-3.2.1.min.js"></script> 
+<script src="scripts/jquery-migrate-1.4.1.min.js"></script>
+
+
+<title>UPSCO Links</title>
+<style type="text/css">
+<!--
+body {
+	color:#000000;
+	background-color:White;
+	margin:0;
+		text-align: center;
+}
+
+#container {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	padding:30px;
+
+	width: auto 100%;
+
+	}
+
+a img {
+	border:none;
+
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+.links{
+	float:left;
+	width: 300px;
+	margin: 10px;
+	text-align: center;
+	overflow: auto;
+	background: url("bub.jpg") ;
+}
+
+.link{
+	padding: 20px;
+	text-align:center;
+	min-width: 220px;
+	margin:3px;
+	border:solid 4px lightblue;
+	font-weight: 600; 
+	font-size: 1.5em;
+	font-variant: small-caps;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.link:hover{
+	background-color: steelblue;
+	opacity: .6;
+	color:aqua;
+}
+
+p.title{
+
+background-image: linear-gradient(
+     black,steelblue
+    ) ;
+color: whitesmoke;
+font-size: 3em;
+margin-top:0px;
+}
+.shadow {
+  -moz-box-shadow:    5px 3px 10px 5px #ccc;
+  -webkit-box-shadow: 5px 3px 10px 5px #ccc;
+  box-shadow:         5px 4px 10px 5px #ccc;
+}
+
+#myLinks {
+	float:left;
+}
+
+-->
+</style>
+<script type="text/javascript"> 
+
+var is_chrome = ((navigator.userAgent.toLowerCase().indexOf('chrome') > -1) &&(navigator.vendor.toLowerCase().indexOf("google") > -1));
+var is_mozilla = ($.browser.mozilla);
+
+$(document).ready(function() {
+	console.log("Loading Personal Links");
+   $("#myLinks").html('<object width="300px" height="800px" data="mylinks.html">');
+
+//Do not show if it is not Chrome (Does not work) -->
+	//if (!is_chrome && !is_mozilla) 
+	if (!is_chrome ){
+			console.log("Can not display MyLinks - use chrome instead");
+   		$("#myLinks").css( "display","none" );
+   	 };
+
+	//if (is_mozilla == true){ alert("you are using firefox!");}
+});
+</script>
+</head>
+<body>
+
+<div id="container">
+<a href="http://www.UPSCOINC.COM"><img src="http://www.upscoinc.com/files/gna_Upsco Logo 2016 Final.png" alt="UPSCO" width="200" /></a>
+
+</div>
+
+<div id="myLinks"></div>
+
+<div class="links shadow"><p class="title">Internal Resources</p>
+	<a href="http://home/jumbotron2"><div class="link">jumbotron</div></a>
+	<a href="http://home/searchscans"><div class="link">search scans</div></a>
+	<a href="http://home/Scorecard"><div class="link">it scorecard</div></a>
+	<a href="http://home/printerdirectory.html"><div class="link">printer directory</div></a>
+	<a href="https://app.asana.com/"><div class="link">asana</div></a>
+	<a href="http://home/searchcenter"><div class="link">search center</div></a>
+	<a href="http://upscoinc.com"><div class="link">upsco website</div></a>
+
+</div>
+<div class="links shadow"><p class="title">Sales Resources</p>
+	<a href="https://upsco.sugarondemand.com/"><div class="link">sugar crm</div></a>
+	<a href="http://upsco.wspdev.com"><div class="link">customer portal</div></a>
+	<a href="https://i2web04.webstorepackage.com/upsco/managerfront/logon.asp?returnpage=https%3A%2F%2Fi2web04%2Ewebstorepackage%2Ecom%2Fupsco%2Fmanagerfront%2FDefault%2Easp%3F"><div class="link">portal admin</div></a>
+</div>
+<div class="links shadow"><p class="title">Human Resources</p>
+	<a href="https://login.paylocity.com/Escher/Escher_WebUI/views/login/login.aspx?"><div class="link">paylocity<br>(34677)</div></a>
+</div>
+<div class="links shadow"><p class="title">Meeting Resources</p>
+	<a href="https://www.join.me/login.aspx?clusterid=04&returnurl=https%3A%2F%2Fwww.join.me%2Ffederated%2Floginsso.aspx%3Ffwdto%3D&headerframe=https%3A%2F%2Fwww.join.me%2Ffederated%2Fresources%2Fheaderframe2.aspx&productframe=https%3A%2F%2Fwww.join.me%2Ffederated%2Fresources%2Fdefaultframe.aspx&lang=en-US&skin=joinme&regtype=X&trackingproducttype=1&trackinguniqueid=83c8e2eb-5e83-4bac-82a9-4b3872f8049b"><div class="link">join me</div></a>
+	<a href="https://traction.tools/Account/Login"><div class="link">traction tools</div></a>
+
+</div>
+<div class="links shadow"><p class="title">Support Resources</p>
+	<a href="http://home/Library"><div class="link">work instruction library</div></a>	
+	<a href="http://support.swktech.com/"><div class="link">swk<br>(bomgar)</div></a>
+	<a href="https://connect.swktech.com/"><div class="link">swk<br>(screen connect)</div></a>
+</div>
+
+</body>
+
+</html>
