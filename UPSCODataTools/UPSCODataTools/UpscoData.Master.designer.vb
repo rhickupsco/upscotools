@@ -11,8 +11,8 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class UPSCODataTools
-    
+Partial Public Class upscoDatatools
+
     '''<summary>
     '''Head control.
     '''</summary>
@@ -21,7 +21,7 @@ Partial Public Class UPSCODataTools
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Head As Global.System.Web.UI.WebControls.ContentPlaceHolder
-    
+
     '''<summary>
     '''form1 control.
     '''</summary>
@@ -30,7 +30,7 @@ Partial Public Class UPSCODataTools
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
-    
+
     '''<summary>
     '''cp1 control.
     '''</summary>
@@ -39,7 +39,7 @@ Partial Public Class UPSCODataTools
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents cp1 As Global.System.Web.UI.WebControls.ContentPlaceHolder
-    
+
     '''<summary>
     '''cp2 control.
     '''</summary>
@@ -48,7 +48,7 @@ Partial Public Class UPSCODataTools
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents cp2 As Global.System.Web.UI.WebControls.ContentPlaceHolder
-    
+
     '''<summary>
     '''cp3 control.
     '''</summary>
@@ -57,13 +57,4 @@ Partial Public Class UPSCODataTools
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents cp3 As Global.System.Web.UI.WebControls.ContentPlaceHolder
-    
-    '''<summary>
-    '''cp4 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents cp4 As Global.System.Web.UI.WebControls.ContentPlaceHolder
 End Class

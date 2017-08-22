@@ -1,11 +1,11 @@
 ﻿
-* {
+/** {
 margin: 0;
-}
+}*/
 
-html, body{
+/*html, body{
 height:100%;
-}
+}*/
 
 #wrapper{
 height:auto !important;
@@ -20,16 +20,32 @@ min-height:calc(98vh - 230px);
 max-height:100vh;
 height:auto;
 }
-body{
- background-image:linear-gradient(
-     black,steelblue
-    );
-}
+
 
 p{
 
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family: FontAwesome, 'Arial Narrow', Arial, sans-serif;
 
+}
+
+.workcenterContainer{
+position: relative;
+top: 50%;
+transform: translateY(-50%);
+}
+.workcenter{
+column-count: 1;
+width: 70%;
+border: solid rgb(212,236,250) 1px;
+margin-top: 0px;
+margin-bottom: 5px;
+background-image:linear-gradient(
+     white, whitesmoke
+    );
+border-radius: 0px 10px 50px 50px;
+color: whitesmoke;
+line-height: 30px;
+font-size:2.4em;
 }
 
 /*This is a back ground with overlay example: background-image: url("../Images/happyNewYear.gif"), url("../Images/blackLogo.png");*/
@@ -44,6 +60,7 @@ border-left:none;
 border-right:none;
 margin-top:3px;
 opacity:1;
+z-index: -1;
 
 
 }
@@ -89,10 +106,11 @@ background-color:Black;
 width: 100%;
 text-align:center;
 vertical-align: middle;
-font-family:'Times New Roman', Times, serif;
+font-family:FontAwesome, 'Times New Roman', Times, serif;
 font-size: 2em;
 color:whitesmoke;
 border-bottom: 6px double rgb(1,85,109);
+background-color: black;
 min-height: 30px;
 line-height: 30px;
 
@@ -121,7 +139,60 @@ width: 80%;
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;  
+    font-size: 5em;
+font-variant:small-caps;
+vertical-align: middle;
+text-align: center;
+clear: both;
+margin-bottom:1px;
+padding-bottom:5px;
 }
+
+.deptTitle{
+    font-size:2.7em;
+background-color:yellow;
+display:inline-block;
+width: 400px;  
+       
+}
+.metrics{
+font-size:1em;
+position: relative;
+width: 33%;
+margin-bottom:3px;
+}
+
+.deptTitle2{
+    font-size:1.1em;
+    color:white;
+display:block;     
+margin-bottom:8px;
+margin-top: 3px;
+
+}
+
+div#banner { 
+position: relative; 
+bottom: 0; 
+opacity:1;
+background-color: dimgray;
+color: aliceblue;
+font:bolder 3em , FontAwesome, "Helvetica Neue"; 
+font-variant:small-caps;
+width: 100%; 
+margin-bottom:3px;
+
+}
+
+div#banner-content { 
+width: 100%; 
+margin: 0 auto; 
+padding: 0px; 
+
+}
+
+
+
 
 @media print {
 
@@ -144,8 +215,8 @@ width: 80%;
     }
 
     .title {
-        font-size: 10pt;
-        border-bottom: 1px;
+        font-size: 3rem;
+        border-bottom: 0px;
     }
 
    

@@ -86,14 +86,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
+    <Content Include="Images\100American.png" />
     <Content Include="Images\a_boos.jpg" />
     <Content Include="Images\BlackLogo.png" />
     <Content Include="Images\company50Logo.png" />
+    <Content Include="Images\station.jpg" />
     <Content Include="Images\crown.png" />
+    <Content Include="Images\tap.png" />
     <Content Include="Images\happyNewYear.gif" />
+    <Content Include="Images\weld.jpg" />
+    <Content Include="Images\machine1.jpg" />
+    <Content Include="Images\meterset.png" />
+    <Content Include="Images\truck.JPG" />
     <Content Include="Images\snow.gif" />
+    <Content Include="Images\bypass.png" />
+    <Content Include="Images\drawing.jpg" />
     <Content Include="Images\upscoLogo.jpg" />
     <Content Include="JumboTron2.aspx" />
+    <Content Include="Jumbotron3.aspx" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.1.0.js" />
     <Content Include="Scripts\jquery-3.1.0.min.js" />
     <Content Include="Scripts\jquery-3.1.0.slim.js" />
@@ -101,15 +112,23 @@
     <Content Include="Scripts\jumboTronScripts.js" />
     <Content Include="Scripts\jquery-1.12.4.min.js" />
     <Content Include="Scripts\modernizr-2.7.2.js" />
+    <Content Include="Scripts\npm.js" />
     <Content Include="Scripts\refreshTimer.js" />
+    <Content Include="Scripts\script.js" />
+    <Content Include="Scripts\slider.js" />
+    <Content Include="Style\bootstrap.min.css" />
     <Content Include="Style\cssReset.css" />
     <Content Include="Style\divTablesStyle.css" />
+    <Content Include="Style\fa47\css\font-awesome.css" />
+    <Content Include="Style\fa47\css\fa.min.css" />
+    <Content Include="Style\fa47\fonts\fontawesome-webfont.svg" />
+    <Content Include="Style\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Style\Jumbo2Styles.css" />
+    <Content Include="Style\jumbotron3Styles.css" />
     <Content Include="Style\upscoStyle.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="JumboTron.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data Access\Common.vb" />
@@ -119,7 +138,14 @@
     </Compile>
     <Compile Include="JumboTron2.aspx.vb">
       <DependentUpon>JumboTron2.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jumbotron3.aspx.designer.vb">
+      <DependentUpon>Jumbotron3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jumbotron3.aspx.vb">
+      <DependentUpon>Jumbotron3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -147,13 +173,6 @@
     </Compile>
     <Compile Include="UpscoData.Master.vb">
       <DependentUpon>UpscoData.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="JumboTron.aspx.designer.vb">
-      <DependentUpon>JumboTron.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="JumboTron.aspx.vb">
-      <DependentUpon>JumboTron.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Data Access\WorkOrder.vb" />
@@ -184,6 +203,43 @@
     </Content>
     <Content Include="Scripts\jquery-3.1.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.0.min.map" />
+    <Content Include="Style\fa47\fonts\fontawesome-webfont.eot" />
+    <Content Include="Style\fa47\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Style\fa47\fonts\fontawesome-webfont.woff" />
+    <Content Include="Style\fa47\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Style\fa47\fonts\FontAwesome.otf" />
+    <Content Include="Style\fa47\less\animated.less" />
+    <Content Include="Style\fa47\less\bordered-pulled.less" />
+    <Content Include="Style\fa47\less\core.less" />
+    <Content Include="Style\fa47\less\fixed-width.less" />
+    <Content Include="Style\fa47\less\font-awesome.less" />
+    <Content Include="Style\fa47\less\icons.less" />
+    <Content Include="Style\fa47\less\larger.less" />
+    <Content Include="Style\fa47\less\list.less" />
+    <Content Include="Style\fa47\less\mixins.less" />
+    <Content Include="Style\fa47\less\path.less" />
+    <Content Include="Style\fa47\less\rotated-flipped.less" />
+    <Content Include="Style\fa47\less\screen-reader.less" />
+    <Content Include="Style\fa47\less\stacked.less" />
+    <Content Include="Style\fa47\less\variables.less" />
+    <Content Include="Style\fa47\scss\font-awesome.scss" />
+    <Content Include="Style\fa47\scss\_animated.scss" />
+    <Content Include="Style\fa47\scss\_bordered-pulled.scss" />
+    <Content Include="Style\fa47\scss\_core.scss" />
+    <Content Include="Style\fa47\scss\_fixed-width.scss" />
+    <Content Include="Style\fa47\scss\_icons.scss" />
+    <Content Include="Style\fa47\scss\_larger.scss" />
+    <Content Include="Style\fa47\scss\_list.scss" />
+    <Content Include="Style\fa47\scss\_mixins.scss" />
+    <Content Include="Style\fa47\scss\_path.scss" />
+    <Content Include="Style\fa47\scss\_rotated-flipped.scss" />
+    <Content Include="Style\fa47\scss\_screen-reader.scss" />
+    <Content Include="Style\fa47\scss\_stacked.scss" />
+    <Content Include="Style\fa47\scss\_variables.scss" />
+    <Content Include="Style\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Style\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Style\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Style\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

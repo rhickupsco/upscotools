@@ -14,65 +14,65 @@ Option Explicit On
 Partial Public Class JumboTron2
     
     '''<summary>
-    '''nipTitle control.
+    '''nip control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents nipTitle As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    Protected WithEvents nip As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
-    '''ncwTitle control.
+    '''non control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ncwTitle As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    Protected WithEvents non As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
-    '''cwTitle control.
+    '''cert control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents cwTitle As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    Protected WithEvents cert As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
-    '''buildTitle control.
+    '''build control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents buildTitle As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    Protected WithEvents build As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
-    '''testTitle control.
+    '''test1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents testTitle As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    Protected WithEvents test1 As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
-    '''paintTitle control.
+    '''test2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents paintTitle As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    Protected WithEvents test2 As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
-    '''test2Title control.
+    '''paint control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents test2Title As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    Protected WithEvents paint As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 End Class

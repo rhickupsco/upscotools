@@ -3,13 +3,13 @@
   <PropertyGroup>
     <NameOfLastUsedPublishProfile>Migration to UPSCOSP</NameOfLastUsedPublishProfile>
     <UseIISExpress>true</UseIISExpress>
-    <ProjectView>ProjectFiles</ProjectView>
+    <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <StartPageUrl>JumboTron.aspx</StartPageUrl>
+          <StartPageUrl>Jumbotron3.aspx</StartPageUrl>
           <StartAction>SpecificPage</StartAction>
           <AspNetDebugging>True</AspNetDebugging>
           <SilverlightDebugging>False</SilverlightDebugging>

@@ -1,6 +1,5 @@
-﻿Imports System.DateTime
-Public Class Jumbotron2
-    Inherits System.Web.UI.Page
+﻿Public Class Jumbotron2
+    Inherits Page
     Public Property Shipdate As String
 
     Public Property PreviousShipDate As String

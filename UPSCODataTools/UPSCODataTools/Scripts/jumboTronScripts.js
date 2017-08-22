@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
     setInterval(function () {
         var date = new Date();
-        $('#show').text(date.toLocaleString());
+        $('#time').text(date.toLocaleString());
        
     }, 1000);
 
