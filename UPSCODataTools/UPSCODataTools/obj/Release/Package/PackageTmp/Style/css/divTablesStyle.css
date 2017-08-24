@@ -1,0 +1,82 @@
+﻿        div.tablecontainer
+        {
+            width:95%;
+            border-top:1px solid black;  
+            margin-bottom: 0px;
+            margin-top: 5px;  
+                   
+        }
+
+        div.tablecontainerrow
+        {
+
+            overflow:hidden;
+            clear:unset;
+            border:1px solid black;
+            border-top:none;
+            font-size:1.3em;
+            padding-top:10px;
+            padding-left:15px;
+        
+
+        }
+
+        div.tablecontainer div div.column1
+        {
+            width: 50%;
+            float:left;
+   
+        }
+
+        div.tablecontainer div div.column2
+        {
+            width: 35%;
+            float:left;
+        }
+
+        div.tablecontainer div div.column3
+        {
+            width: 15%;
+            float:right;
+            text-align:left;
+            margin-right:-5px;
+        }
+
+
+
+        /*.excellent{
+         font-size:2.7em;
+        background-color:lawngreen;
+        width: 400px;  
+        border-top-right-radius: 25px;      
+        }
+
+        .error{
+            position: relative;
+              width: 180%;
+              text-align: Left;
+              padding-left:30px;
+              font-size:2.6em;
+              background-color: lawngreen;
+              border: 1px solid red;
+              -webkit-border-radius: 0 10px 0 0px;
+              -moz-border-radius: 0 10px 0 0px;
+              border-radius: 0 10px 0 0px;
+              -webkit-box-shadow: 6px 2px 4px #888;
+              -moz-box-shadow: 6px 2px 4px #888;
+              box-shadow: 6px 2px 4px #888;
+         }
+        
+
+        .behind{
+        font-size:2.7em;
+        background-color:red;
+        width: 400px;       
+        color: white;
+        }*/
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}

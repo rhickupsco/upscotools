@@ -1,0 +1,61 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="UpscoData.Master.vb" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <title>Upsco Data Tools - JumboTron</title>
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="JumboTron">
+    <meta name="author" content="Randi Hickman">
+    </asp:ContentPlaceHolder>   
+    <link href="Style/cssReset.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery-3.1.0.min.js" type="text/javascript"></script>
+    <script src="Scripts/jumboTronScripts.js" type="text/javascript"></script>
+     <%--<script src="Scripts/modernizr-2.7.2.js"></script>--%>
+    <script src="Scripts/slider.js" type="text/javascript"></script>
+  <%--  <script src="Scripts/bootstrap.min.js"></script>
+    <link href="Style/bootstrap.min.css" rel="stylesheet" />--%>
+    <link href="Style/Jumbotron3Styles.css" rel="stylesheet" />
+    <link href="Style/upscoStyle.css" rel="stylesheet" type="text/css" />
+    <link href="Style/fa.min.css" rel="stylesheet" />
+    <link href="Style/Jumbo2Styles.css" rel="stylesheet" />
+    <%--<link href="Style/divTablesStyle.css" rel="stylesheet" />--%>
+
+</head>
+<body> 
+
+   <form id="form1" runat="server">
+   <div id="wrapper">
+        <header>
+            <asp:ContentPlaceHolder ID="cp1" runat="server">
+       
+            </asp:ContentPlaceHolder>
+        </header>
+        <div id="content" class="container-fluid">
+        <nav>
+            <asp:ContentPlaceHolder ID="cp2" runat="server">
+            
+            </asp:ContentPlaceHolder>
+        </nav>
+       <%-- <section>
+            <asp:ContentPlaceHolder ID="cp3" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </section>--%>
+  
+        </div>
+    </div>
+       
+           
+    </form>
+    <footer>
+            <asp:ContentPlaceHolder ID="cp3" runat="server">
+        
+            </asp:ContentPlaceHolder>
+    </footer>
+
+</body>
+</html>

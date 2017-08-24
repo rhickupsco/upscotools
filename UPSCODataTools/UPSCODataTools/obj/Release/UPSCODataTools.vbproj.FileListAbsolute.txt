@@ -1,3 +1,12 @@
 C:\UPSCOSourceControl\UPSCODataTools\UPSCODataTools\obj\Release\UPSCODataTools.Resources.resources
 C:\UPSCOSourceControl\UPSCODataTools\UPSCODataTools\obj\Release\UPSCODataTools.vbproj.GenerateResource.Cache
 C:\UPSCOSourceControl\UPSCODataTools\UPSCODataTools\obj\Release\UPSCODataTools.vbprojResolveAssemblyReference.cache
+C:\myGit\upscotools\UPSCODataTools\UPSCODataTools\bin\UPSCODataTools.dll.config
+C:\myGit\upscotools\UPSCODataTools\UPSCODataTools\bin\UPSCODataTools.dll
+C:\myGit\upscotools\UPSCODataTools\UPSCODataTools\bin\UPSCODataTools.pdb
+C:\myGit\upscotools\UPSCODataTools\UPSCODataTools\bin\UPSCODataTools.xml
+C:\myGit\upscotools\UPSCODataTools\UPSCODataTools\obj\Release\UPSCODataTools.Resources.resources
+C:\myGit\upscotools\UPSCODataTools\UPSCODataTools\obj\Release\UPSCODataTools.vbproj.GenerateResource.Cache
+C:\myGit\upscotools\UPSCODataTools\UPSCODataTools\obj\Release\UPSCODataTools.dll
+C:\myGit\upscotools\UPSCODataTools\UPSCODataTools\obj\Release\UPSCODataTools.xml
+C:\myGit\upscotools\UPSCODataTools\UPSCODataTools\obj\Release\UPSCODataTools.pdb

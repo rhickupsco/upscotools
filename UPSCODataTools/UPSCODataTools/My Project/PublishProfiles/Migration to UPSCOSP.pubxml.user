@@ -9,20 +9,86 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <_PublishTargetUrl>Z:\inetpub\wwwroot\UpscoTools\Jumbotron2</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>05/05/2017 11:45:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>12/07/2015 19:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>06/06/2016 15:40:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>06/06/2016 15:40:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>06/06/2016 10:45:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>06/06/2016 15:40:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>06/06/2016 15:40:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>06/06/2016 10:42:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Diagnostics.Tracing.EventSource.dll">
+      <publishTime>12/01/2015 14:31:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Threading.Tasks.dll">
+      <publishTime>04/07/2014 12:26:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Threading.Tasks.Extensions.Desktop.dll">
+      <publishTime>04/07/2014 12:26:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Threading.Tasks.Extensions.dll">
+      <publishTime>04/07/2014 12:26:14</publishTime>
+    </File>
+    <File Include="bin/System.IO.dll">
+      <publishTime>02/18/2015 17:07:08</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.dll">
+      <publishTime>02/18/2015 17:07:08</publishTime>
+    </File>
+    <File Include="bin/System.Threading.Tasks.dll">
+      <publishTime>02/18/2015 17:07:08</publishTime>
+    </File>
     <File Include="bin/UPSCODataTools.dll">
-      <publishTime>07/21/2017 11:34:32</publishTime>
+      <publishTime>08/24/2017 12:39:12</publishTime>
+    </File>
+    <File Include="bin/UPSCODataTools.dll.config">
+      <publishTime>07/26/2017 14:09:55</publishTime>
     </File>
     <File Include="bin/UPSCODataTools.xml">
-      <publishTime>07/21/2017 11:34:32</publishTime>
+      <publishTime>08/24/2017 12:39:12</publishTime>
     </File>
     <File Include="Data Access/Common.vb">
-      <publishTime>07/20/2017 09:35:03</publishTime>
+      <publishTime>08/24/2017 11:53:26</publishTime>
+    </File>
+    <File Include="Data Access/ODBCDataAccess.vb">
+      <publishTime>05/05/2017 12:01:50</publishTime>
+    </File>
+    <File Include="Data Access/SQLDataAccess.vb">
+      <publishTime>10/19/2016 15:50:50</publishTime>
+    </File>
+    <File Include="Data Access/WorkOrder.vb">
+      <publishTime>10/18/2016 08:42:16</publishTime>
+    </File>
+    <File Include="DepartmentSummaries.vb">
+      <publishTime>04/10/2017 14:18:11</publishTime>
+    </File>
+    <File Include="Images/100American.png">
+      <publishTime>08/22/2017 11:05:38</publishTime>
     </File>
     <File Include="Images/a_boos.jpg">
       <publishTime>05/05/2017 12:26:44</publishTime>
     </File>
     <File Include="Images/BlackLogo.png">
       <publishTime>05/05/2017 12:26:54</publishTime>
+    </File>
+    <File Include="Images/bypass.png">
+      <publishTime>08/22/2017 10:58:44</publishTime>
     </File>
     <File Include="Images/company50Logo.png">
       <publishTime>05/05/2017 12:26:54</publishTime>
@@ -135,20 +201,98 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Images/CustomerLogos/Utilicor.png">
       <publishTime>05/07/2014 09:23:14</publishTime>
     </File>
+    <File Include="Images/drawing.jpg">
+      <publishTime>08/22/2017 11:01:56</publishTime>
+    </File>
     <File Include="Images/happyNewYear.gif">
       <publishTime>05/05/2017 12:26:54</publishTime>
+    </File>
+    <File Include="Images/machine1.jpg">
+      <publishTime>08/22/2017 11:14:17</publishTime>
+    </File>
+    <File Include="Images/meterset.png">
+      <publishTime>08/22/2017 10:59:54</publishTime>
     </File>
     <File Include="Images/snow.gif">
       <publishTime>05/05/2017 12:26:54</publishTime>
     </File>
+    <File Include="Images/station.jpg">
+      <publishTime>08/22/2017 11:52:46</publishTime>
+    </File>
+    <File Include="Images/tap.png">
+      <publishTime>08/22/2017 11:53:31</publishTime>
+    </File>
+    <File Include="Images/truck.JPG">
+      <publishTime>08/22/2017 11:10:44</publishTime>
+    </File>
     <File Include="Images/upscoLogo.jpg">
       <publishTime>05/05/2017 12:26:54</publishTime>
     </File>
+    <File Include="Images/weld.jpg">
+      <publishTime>08/22/2017 11:53:56</publishTime>
+    </File>
     <File Include="JumboTron.aspx">
-      <publishTime>07/13/2017 15:03:18</publishTime>
+      <publishTime>08/09/2017 12:49:00</publishTime>
+    </File>
+    <File Include="JumboTron.aspx.designer.vb">
+      <publishTime>07/26/2017 13:44:11</publishTime>
+    </File>
+    <File Include="JumboTron.aspx.vb">
+      <publishTime>07/26/2017 13:55:32</publishTime>
     </File>
     <File Include="JumboTron2.aspx">
-      <publishTime>07/21/2017 10:59:25</publishTime>
+      <publishTime>08/22/2017 09:28:08</publishTime>
+    </File>
+    <File Include="JumboTron2.aspx.designer.vb">
+      <publishTime>08/22/2017 09:28:02</publishTime>
+    </File>
+    <File Include="JumboTron2.aspx.vb">
+      <publishTime>08/22/2017 09:27:55</publishTime>
+    </File>
+    <File Include="Jumbotron3.aspx">
+      <publishTime>08/24/2017 12:06:10</publishTime>
+    </File>
+    <File Include="Jumbotron3.aspx.designer.vb">
+      <publishTime>08/24/2017 09:38:31</publishTime>
+    </File>
+    <File Include="Jumbotron3.aspx.vb">
+      <publishTime>08/24/2017 10:26:08</publishTime>
+    </File>
+    <File Include="My Project/Application.Designer.vb">
+      <publishTime>05/05/2017 11:59:04</publishTime>
+    </File>
+    <File Include="My Project/Application.myapp">
+      <publishTime>10/19/2016 15:50:50</publishTime>
+    </File>
+    <File Include="My Project/AssemblyInfo.vb">
+      <publishTime>10/19/2016 15:50:50</publishTime>
+    </File>
+    <File Include="My Project/MyExtensions/MyWebExtension.vb">
+      <publishTime>10/19/2016 15:50:50</publishTime>
+    </File>
+    <File Include="My Project/PublishProfiles/JumboTron.pubxml">
+      <publishTime>10/19/2016 15:50:50</publishTime>
+    </File>
+    <File Include="My Project/PublishProfiles/JumboTron.pubxml.user">
+      <publishTime>04/10/2017 14:59:19</publishTime>
+    </File>
+    <File Include="My Project/PublishProfiles/Migration to UPSCOSP.pubxml">
+      <publishTime>08/24/2017 12:39:32</publishTime>
+    </File>
+    <File Include="My Project/PublishProfiles/Migration to UPSCOSP.pubxml.user">
+      <publishTime>08/24/2017 12:34:43</publishTime>
+    </File>
+    <File Include="My Project/Resources.Designer.vb">
+      <publishTime>05/05/2017 11:59:04</publishTime>
+    </File>
+    <File Include="My Project/Resources.resx">
+      <publishTime>10/19/2016 15:50:50</publishTime>
+    </File>
+    <File Include="My Project/Settings.Designer.vb">
+      <publishTime>05/05/2017 11:59:04</publishTime>
+    </File>
+    <File Include="My Project/Settings.settings">
+      <publishTime>10/19/2016 15:50:50</publishTime>
     </File>
     <File Include="packages.config">
       <publishTime>05/05/2017 11:59:04</publishTime>
@@ -156,8 +300,20 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="PrecompiledApp.config">
       <publishTime>05/05/2017 11:20:24</publishTime>
     </File>
+    <File Include="Scripts/ai.0.22.19-build00125.js">
+      <publishTime>08/24/2016 01:20:50</publishTime>
+    </File>
+    <File Include="Scripts/ai.0.22.19-build00125.min.js">
+      <publishTime>08/24/2016 01:20:50</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>08/22/2017 14:15:12</publishTime>
+    </File>
     <File Include="Scripts/jquery-1.12.4.min.js">
       <publishTime>10/19/2016 15:50:50</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.0.intellisense.js">
+      <publishTime>05/05/2017 11:56:13</publishTime>
     </File>
     <File Include="Scripts/jquery-3.1.0.js">
       <publishTime>05/05/2017 11:56:13</publishTime>
@@ -196,7 +352,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/05/2017 11:46:28</publishTime>
     </File>
     <File Include="Scripts/jumboTronScripts.js">
-      <publishTime>10/19/2016 15:50:50</publishTime>
+      <publishTime>08/24/2017 12:52:36</publishTime>
     </File>
     <File Include="Scripts/modernizr-2.7.2.js">
       <publishTime>05/05/2017 11:56:18</publishTime>
@@ -204,26 +360,308 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/modernizr-2.8.3.js">
       <publishTime>05/05/2017 11:48:34</publishTime>
     </File>
+    <File Include="Scripts/npm.js">
+      <publishTime>08/22/2017 14:15:12</publishTime>
+    </File>
     <File Include="Scripts/refreshTimer.js">
       <publishTime>11/16/2016 08:47:20</publishTime>
+    </File>
+    <File Include="Scripts/slider.js">
+      <publishTime>08/24/2017 13:09:37</publishTime>
+    </File>
+    <File Include="Service References/Application Insights/ConnectedService.json">
+      <publishTime>08/24/2016 01:20:50</publishTime>
+    </File>
+    <File Include="Style/bootstrap.min.css">
+      <publishTime>08/22/2017 14:13:00</publishTime>
+    </File>
+    <File Include="Style/css/bootstrap.min.css">
+      <publishTime>08/22/2017 14:13:00</publishTime>
+    </File>
+    <File Include="Style/css/cssReset.css">
+      <publishTime>05/05/2017 12:27:17</publishTime>
+    </File>
+    <File Include="Style/css/divTablesStyle.css">
+      <publishTime>08/22/2017 14:50:07</publishTime>
+    </File>
+    <File Include="Style/css/fa.min.css">
+      <publishTime>08/22/2017 10:30:37</publishTime>
+    </File>
+    <File Include="Style/css/font-awesome.css">
+      <publishTime>08/22/2017 10:30:37</publishTime>
+    </File>
+    <File Include="Style/css/Jumbo2Styles.css">
+      <publishTime>08/24/2017 10:22:55</publishTime>
+    </File>
+    <File Include="Style/css/jumbotron3Styles.css">
+      <publishTime>08/23/2017 16:58:32</publishTime>
+    </File>
+    <File Include="Style/css/upscoStyle.css">
+      <publishTime>08/24/2017 12:36:55</publishTime>
     </File>
     <File Include="Style/cssReset.css">
       <publishTime>05/05/2017 12:27:17</publishTime>
     </File>
     <File Include="Style/divTablesStyle.css">
-      <publishTime>07/20/2017 15:26:56</publishTime>
+      <publishTime>08/22/2017 14:50:07</publishTime>
+    </File>
+    <File Include="Style/fa47/css/fa.min.css">
+      <publishTime>08/22/2017 10:30:37</publishTime>
+    </File>
+    <File Include="Style/fa47/css/font-awesome.css">
+      <publishTime>08/22/2017 10:30:37</publishTime>
+    </File>
+    <File Include="Style/fa47/fonts/fontawesome-webfont.eot">
+      <publishTime>08/22/2017 10:30:37</publishTime>
+    </File>
+    <File Include="Style/fa47/fonts/fontawesome-webfont.svg">
+      <publishTime>08/22/2017 10:30:37</publishTime>
+    </File>
+    <File Include="Style/fa47/fonts/fontawesome-webfont.ttf">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/fonts/fontawesome-webfont.woff">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/fonts/fontawesome-webfont.woff2">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/fonts/FontAwesome.otf">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/less/animated.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/less/bordered-pulled.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/less/core.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/less/fixed-width.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/less/font-awesome.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/less/icons.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/less/larger.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/less/list.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/less/mixins.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/less/path.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/less/rotated-flipped.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/less/screen-reader.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/less/stacked.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/less/variables.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/scss/font-awesome.scss">
+      <publishTime>08/22/2017 10:30:39</publishTime>
+    </File>
+    <File Include="Style/fa47/scss/_animated.scss">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/scss/_bordered-pulled.scss">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/scss/_core.scss">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/scss/_fixed-width.scss">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/scss/_icons.scss">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/scss/_larger.scss">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/scss/_list.scss">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fa47/scss/_mixins.scss">
+      <publishTime>08/22/2017 10:30:39</publishTime>
+    </File>
+    <File Include="Style/fa47/scss/_path.scss">
+      <publishTime>08/22/2017 10:30:39</publishTime>
+    </File>
+    <File Include="Style/fa47/scss/_rotated-flipped.scss">
+      <publishTime>08/22/2017 10:30:39</publishTime>
+    </File>
+    <File Include="Style/fa47/scss/_screen-reader.scss">
+      <publishTime>08/22/2017 10:30:39</publishTime>
+    </File>
+    <File Include="Style/fa47/scss/_stacked.scss">
+      <publishTime>08/22/2017 10:30:39</publishTime>
+    </File>
+    <File Include="Style/fa47/scss/_variables.scss">
+      <publishTime>08/22/2017 10:30:39</publishTime>
+    </File>
+    <File Include="Style/fonts/fontawesome-webfont.eot">
+      <publishTime>08/22/2017 10:30:37</publishTime>
+    </File>
+    <File Include="Style/fonts/fontawesome-webfont.svg">
+      <publishTime>08/22/2017 10:30:37</publishTime>
+    </File>
+    <File Include="Style/fonts/fontawesome-webfont.ttf">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fonts/fontawesome-webfont.woff">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fonts/fontawesome-webfont.woff2">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fonts/FontAwesome.otf">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>08/22/2017 14:14:21</publishTime>
+    </File>
+    <File Include="Style/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>08/22/2017 14:14:22</publishTime>
+    </File>
+    <File Include="Style/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>08/22/2017 14:14:22</publishTime>
+    </File>
+    <File Include="Style/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>08/22/2017 14:14:22</publishTime>
+    </File>
+    <File Include="Style/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>08/22/2017 14:14:22</publishTime>
     </File>
     <File Include="Style/Jumbo2Styles.css">
-      <publishTime>08/22/2017 14:51:58</publishTime>
+      <publishTime>08/24/2017 10:22:55</publishTime>
+    </File>
+    <File Include="Style/jumbotron3Styles.css">
+      <publishTime>08/23/2017 16:58:32</publishTime>
+    </File>
+    <File Include="Style/less/animated.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/less/bordered-pulled.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/less/core.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/less/fixed-width.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/less/font-awesome.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/less/icons.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/less/larger.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/less/list.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/less/mixins.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/less/path.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/less/rotated-flipped.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/less/screen-reader.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/less/stacked.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/less/variables.less">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/scss/font-awesome.scss">
+      <publishTime>08/22/2017 10:30:39</publishTime>
+    </File>
+    <File Include="Style/scss/_animated.scss">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/scss/_bordered-pulled.scss">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/scss/_core.scss">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/scss/_fixed-width.scss">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/scss/_icons.scss">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/scss/_larger.scss">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/scss/_list.scss">
+      <publishTime>08/22/2017 10:30:38</publishTime>
+    </File>
+    <File Include="Style/scss/_mixins.scss">
+      <publishTime>08/22/2017 10:30:39</publishTime>
+    </File>
+    <File Include="Style/scss/_path.scss">
+      <publishTime>08/22/2017 10:30:39</publishTime>
+    </File>
+    <File Include="Style/scss/_rotated-flipped.scss">
+      <publishTime>08/22/2017 10:30:39</publishTime>
+    </File>
+    <File Include="Style/scss/_screen-reader.scss">
+      <publishTime>08/22/2017 10:30:39</publishTime>
+    </File>
+    <File Include="Style/scss/_stacked.scss">
+      <publishTime>08/22/2017 10:30:39</publishTime>
+    </File>
+    <File Include="Style/scss/_variables.scss">
+      <publishTime>08/22/2017 10:30:39</publishTime>
     </File>
     <File Include="Style/upscoStyle.css">
-      <publishTime>07/21/2017 09:29:02</publishTime>
+      <publishTime>08/24/2017 09:35:58</publishTime>
     </File>
     <File Include="UpscoData.Master">
-      <publishTime>07/20/2017 14:59:23</publishTime>
+      <publishTime>08/24/2017 13:09:37</publishTime>
+    </File>
+    <File Include="UpscoData.Master.designer.vb">
+      <publishTime>08/24/2017 12:47:52</publishTime>
+    </File>
+    <File Include="UpscoData.Master.vb">
+      <publishTime>10/19/2016 15:50:50</publishTime>
+    </File>
+    <File Include="UPSCODataTools.vbproj">
+      <publishTime>08/24/2017 12:36:46</publishTime>
+    </File>
+    <File Include="UPSCODataTools.vbproj.user">
+      <publishTime>08/24/2017 12:36:46</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/21/2017 11:34:32</publishTime>
+      <publishTime>08/24/2017 12:39:33</publishTime>
+    </File>
+    <File Include="Web.Debug.config">
+      <publishTime>10/19/2016 15:50:50</publishTime>
+    </File>
+    <File Include="Web.Release.config">
+      <publishTime>10/19/2016 15:50:50</publishTime>
     </File>
   </ItemGroup>
 </Project>

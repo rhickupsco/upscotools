@@ -1,0 +1,224 @@
+﻿
+/** {
+margin: 0;
+}*/
+
+/*html, body{
+height:100%;
+}*/
+
+.wrapper{
+height:auto !important;
+height: 100%;
+text-align:center;
+margin: 0 auto;
+}
+
+#content{
+min-height:calc(98vh - 230px);
+max-height:100vh;
+height:auto;
+}
+
+
+p{
+
+font-family: FontAwesome, 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+/*This is a back ground with overlay example: background-image: url("../Images/happyNewYear.gif"), url("../Images/blackLogo.png");*/
+header{
+height:100px;
+padding:2px;
+background-image: url('../../Images/blackLogo.png');
+background-repeat:round none;
+background-size: auto;
+margin-top:3px;
+opacity:1;
+z-index:2;
+    border-left-style: none;
+    border-left-color: inherit;
+    border-left-width: medium;
+    border-right-style: none;
+    border-right-color: inherit;
+    border-right-width: medium;
+    border-top-style: solid;
+    border-top-color: inherit;
+    border-top-width: thin;
+    border-bottom-style: solid;
+    border-bottom-color: inherit;
+    border-bottom-width: thin;
+}
+
+section{
+height:0px;
+margin-bottom:0px;
+margin-top:-10px;
+}
+
+#nav{
+width:100%;
+}
+
+/* ORIGINAL COLOR: rgb(1,85,109) */
+footer {
+background-color: rgb(1,85,109);
+/*border-top-left-radius:2500px 280px;
+border-top-right-radius:2500px 280px;*/
+opacity: 1;
+position:sticky absolute;
+
+}
+
+
+img{
+
+border-radius:15px 0;
+
+}
+
+#topper{
+width: auto 100%;
+background-color:Black;
+
+}
+
+.metricTitle{
+width: 100%;
+text-align:center;
+vertical-align: middle;
+font-family:FontAwesome, 'Times New Roman', Times, serif;
+font-size: 2em;
+color:whitesmoke;
+border-bottom: 6px double rgb(1,85,109);
+background-color: black;
+min-height: 30px;
+line-height: 36px;
+
+}
+.title{
+width: 100%;
+text-align:center;
+vertical-align: middle;
+font-family:FontAwesome, 'Times New Roman', Times, serif;
+font-size: 2em;
+color:whitesmoke;
+border-bottom: 6px double rgb(1,85,109);
+background-color: black;
+min-height: 30px;
+line-height: 40px;
+}
+
+.deptSection{
+font-size: 2em;
+color: yellow;
+line-height:40px;
+width:auto;
+background-color: steelblue;
+}
+
+#Summary{
+text-align:left;
+margin-left:auto;
+margin-right:auto;
+padding-bottom:-100px;
+width: 80%;
+}
+
+.stroke
+{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+font-variant:small-caps;
+vertical-align: middle;
+text-align: center;
+clear: both;
+margin-bottom:1px;
+padding-bottom:5px;
+}
+
+.depttitle{
+font-size:2.7em;
+background-color:black;
+display:block;
+margin: 0px auto;
+height:100px;
+margin-bottom:8px;
+margin-top: 3px;
+line-height:80px;       
+}
+
+.deptTitle2{
+    font-size:1.1em;
+    color:white;
+display:block;     
+margin-bottom:8px;
+margin-top: 3px;
+
+}
+
+#banner { 
+position:relative;
+bottom: 45px; 
+opacity:1;
+background-color: black;
+width: 100%;
+
+padding: 5px;
+}
+
+#banner-content .banner-content{ 
+width: 100%; 
+margin: 5px auto; 
+}
+
+
+
+
+@media print {
+
+    footer {
+        display: block;
+        font: 12pt Georgia, "Times New Roman", Times, serif;
+    }
+
+    header {
+        display: none;
+    }
+
+    #wrapper {
+        font: 8pt Georgia, "Times New Roman", Times, serif;
+        line-height: 1.0;
+        width: 100%;
+        height: 100%;
+        margin: 0% 0% 0% 0%;
+        filter: progid:DXImageTransform.Microsoft.BasicImage(Rotation=3);
+    }
+
+    .title {
+        font-size: 3rem;
+        border-bottom: 0px;
+    }
+
+   
+
+    .deptSection {
+        width: 100%;
+        background-color:white;
+
+    }
+
+    .stroke {
+        color: black;
+        text-shadow: none;
+    }
+
+   
+}
+

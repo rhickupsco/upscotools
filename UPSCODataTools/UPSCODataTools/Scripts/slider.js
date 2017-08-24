@@ -6,10 +6,9 @@ $.global.total = 0;
 $(document).ready(function () {
 
     var WindowWidth = $(window).width();
-    var SlideCount = $('#slides li').length;
+    var SlideCount = $('#slides .countMe').length;
     var SlidesWidth = SlideCount * WindowWidth;
     
-
     $.global.item = 0;
     $.global.total = SlideCount;
 
@@ -21,14 +20,16 @@ $(document).ready(function () {
     setInterval(function () {
         var date = new Date();
         $('#time').text(date.toLocaleString());
-
     }, 1000);
 
 
     setInterval(function () {
-        location.reload();
         Slide('forward');
-    }, 12000);
+    }, 30000);
+
+    setInterval(function () {
+        location.reload();
+    }, 600000);
 
     $('#left').click(function () { Slide('back'); });
     $('#right').click(function () { Slide('forward'); });
