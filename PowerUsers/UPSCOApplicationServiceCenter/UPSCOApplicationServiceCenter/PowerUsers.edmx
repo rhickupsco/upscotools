@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="sbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Applications">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="applicationName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="applicationModule" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="LinkTable">
+          <Key>
+            <PropertyRef Name="applicationID" />
+            <PropertyRef Name="userID" />
+          </Key>
+          <Property Name="applicationID" Type="int" Nullable="false" />
+          <Property Name="userID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="userFirstName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="userLastName" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="userEmailAddress" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="userExtension" Type="varchar" MaxLength="4" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'SupportBackup.dbo.View_PowerUsersMatrix' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="View_PowerUsersMatrix">
+          <Key>
+            <PropertyRef Name="applicationName" />
+            <PropertyRef Name="userFirstName" />
+            <PropertyRef Name="userLastName" />
+            <PropertyRef Name="userEmailAddress" />
+            <PropertyRef Name="userExtension" />
+          </Key>
+          <Property Name="applicationName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="applicationModule" Type="varchar" MaxLength="50" />
+          <Property Name="userFirstName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="userLastName" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="userEmailAddress" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="userExtension" Type="varchar" MaxLength="4" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="sbModelStoreContainer">
+          <EntitySet Name="Applications" EntityType="Self.Applications" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LinkTable" EntityType="Self.LinkTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="View_PowerUsersMatrix" EntityType="Self.View_PowerUsersMatrix" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [View_PowerUsersMatrix].[applicationName] AS [applicationName], 
+    [View_PowerUsersMatrix].[applicationModule] AS [applicationModule], 
+    [View_PowerUsersMatrix].[userFirstName] AS [userFirstName], 
+    [View_PowerUsersMatrix].[userLastName] AS [userLastName], 
+    [View_PowerUsersMatrix].[userEmailAddress] AS [userEmailAddress], 
+    [View_PowerUsersMatrix].[userExtension] AS [userExtension]
+    FROM [dbo].[View_PowerUsersMatrix] AS [View_PowerUsersMatrix]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="sbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Application">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="applicationName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="applicationModule" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="userFirstName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="userLastName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="userEmailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="userExtension" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LinkTable">
+          <Key>
+            <PropertyRef Name="applicationID" />
+            <PropertyRef Name="userID" />
+          </Key>
+          <Property Name="applicationID" Type="Int32" Nullable="false" />
+          <Property Name="userID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="sbContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Applications" EntityType="Self.Application" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <EntitySet Name="LinkTables" EntityType="Self.LinkTable" />
+          <EntitySet Name="View_PowerUsersMatrix" EntityType="sbModel.View_PowerUsersMatrix" />
+        </EntityContainer>
+        <EntityType Name="View_PowerUsersMatrix">
+          <Key>
+            <PropertyRef Name="applicationName" />
+            <PropertyRef Name="userFirstName" />
+            <PropertyRef Name="userLastName" />
+            <PropertyRef Name="userEmailAddress" />
+            <PropertyRef Name="userExtension" />
+          </Key>
+          <Property Name="applicationName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="applicationModule" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="userFirstName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="userLastName" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="userEmailAddress" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="userExtension" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="sbModelStoreContainer" CdmEntityContainer="sbContext">
+          <EntitySetMapping Name="Applications">
+            <EntityTypeMapping TypeName="sbModel.Application">
+              <MappingFragment StoreEntitySet="Applications">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="applicationName" ColumnName="applicationName" />
+                <ScalarProperty Name="applicationModule" ColumnName="applicationModule" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="sbModel.User">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="userFirstName" ColumnName="userFirstName" />
+                <ScalarProperty Name="userLastName" ColumnName="userLastName" />
+                <ScalarProperty Name="userEmailAddress" ColumnName="userEmailAddress" />
+                <ScalarProperty Name="userExtension" ColumnName="userExtension" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LinkTables">
+            <EntityTypeMapping TypeName="sbModel.LinkTable">
+              <MappingFragment StoreEntitySet="LinkTable">
+                <ScalarProperty Name="applicationID" ColumnName="applicationID" />
+                <ScalarProperty Name="userID" ColumnName="userID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="View_PowerUsersMatrix">
+            <EntityTypeMapping TypeName="sbModel.View_PowerUsersMatrix">
+              <MappingFragment StoreEntitySet="View_PowerUsersMatrix">
+                <ScalarProperty Name="userExtension" ColumnName="userExtension" />
+                <ScalarProperty Name="userEmailAddress" ColumnName="userEmailAddress" />
+                <ScalarProperty Name="userLastName" ColumnName="userLastName" />
+                <ScalarProperty Name="userFirstName" ColumnName="userFirstName" />
+                <ScalarProperty Name="applicationModule" ColumnName="applicationModule" />
+                <ScalarProperty Name="applicationName" ColumnName="applicationName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

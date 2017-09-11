@@ -1,0 +1,51 @@
+﻿@model IEnumerable<UPSCOApplicationServiceCenter.User>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Users List</h2>
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>*@
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.userFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.userLastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.userEmailAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.userExtension)
+        </th>
+        @*<th></th>*@
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.userFirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.userLastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.userEmailAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.userExtension)
+        </td>
+        @*<td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>*@
+    </tr>
+}
+
+</table>

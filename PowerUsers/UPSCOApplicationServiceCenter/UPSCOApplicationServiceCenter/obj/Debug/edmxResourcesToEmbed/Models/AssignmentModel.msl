@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SupportBackupModelStoreContainer" CdmEntityContainer="SupportBackupEntities">
+    <EntitySetMapping Name="Applications">
+      <EntityTypeMapping TypeName="SupportBackupModel.Application">
+        <MappingFragment StoreEntitySet="Applications">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="applicationName" ColumnName="applicationName" />
+          <ScalarProperty Name="applicationModule" ColumnName="applicationModule" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LinkTables">
+      <EntityTypeMapping TypeName="SupportBackupModel.LinkTable">
+        <MappingFragment StoreEntitySet="LinkTable">
+          <ScalarProperty Name="applicationID" ColumnName="applicationID" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="SupportBackupModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="userFirstName" ColumnName="userFirstName" />
+          <ScalarProperty Name="userLastName" ColumnName="userLastName" />
+          <ScalarProperty Name="userEmailAddress" ColumnName="userEmailAddress" />
+          <ScalarProperty Name="userExtension" ColumnName="userExtension" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

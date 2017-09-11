@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="sbModelStoreContainer" CdmEntityContainer="sbContext">
+    <EntitySetMapping Name="Applications">
+      <EntityTypeMapping TypeName="sbModel.Application">
+        <MappingFragment StoreEntitySet="Applications">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="applicationName" ColumnName="applicationName" />
+          <ScalarProperty Name="applicationModule" ColumnName="applicationModule" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="sbModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="userFirstName" ColumnName="userFirstName" />
+          <ScalarProperty Name="userLastName" ColumnName="userLastName" />
+          <ScalarProperty Name="userEmailAddress" ColumnName="userEmailAddress" />
+          <ScalarProperty Name="userExtension" ColumnName="userExtension" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LinkTables">
+      <EntityTypeMapping TypeName="sbModel.LinkTable">
+        <MappingFragment StoreEntitySet="LinkTable">
+          <ScalarProperty Name="applicationID" ColumnName="applicationID" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_PowerUsersMatrix">
+      <EntityTypeMapping TypeName="sbModel.View_PowerUsersMatrix">
+        <MappingFragment StoreEntitySet="View_PowerUsersMatrix">
+          <ScalarProperty Name="userExtension" ColumnName="userExtension" />
+          <ScalarProperty Name="userEmailAddress" ColumnName="userEmailAddress" />
+          <ScalarProperty Name="userLastName" ColumnName="userLastName" />
+          <ScalarProperty Name="userFirstName" ColumnName="userFirstName" />
+          <ScalarProperty Name="applicationModule" ColumnName="applicationModule" />
+          <ScalarProperty Name="applicationName" ColumnName="applicationName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

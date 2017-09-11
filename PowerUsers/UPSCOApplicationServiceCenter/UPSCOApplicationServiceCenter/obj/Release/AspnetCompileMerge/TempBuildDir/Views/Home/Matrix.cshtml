@@ -1,0 +1,59 @@
+﻿@model IEnumerable<UPSCOApplicationServiceCenter.View_PowerUsersMatrix>
+
+@{
+    ViewBag.Title = "Matrix View";
+}
+<div class="jumbotron">
+    <img src="~/Images/powerUser.jpg" alt="powerusers" class="img-responsive" />
+</div>
+<h2>Application Power User Support Matrix</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.applicationName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.applicationModule)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.userFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.userLastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.userEmailAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.userExtension)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.applicationName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.applicationModule)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.userFirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.userLastName)
+        </td>
+        <td>
+            <a href="mailto:@Html.DisplayFor(modelItem => item.userEmailAddress)">@Html.DisplayFor(modelItem => item.userEmailAddress)</a>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.userExtension)
+        </td>
+        @*<td>
+             @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ })
+        </td>*@
+    </tr>
+}
+
+</table>

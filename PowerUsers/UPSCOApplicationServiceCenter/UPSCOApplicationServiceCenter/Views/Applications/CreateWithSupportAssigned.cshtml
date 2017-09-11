@@ -1,0 +1,54 @@
+﻿@model IEnumerable<object>
+
+@{
+    List<UPSCOApplicationServiceCenter.Models.Application> lstApplications = Model.ToList()[0] as List<UPSCOApplicationServiceCenter.Models.Application>;
+    List<UPSCOApplicationServiceCenter.Models.LinkTable> lstLinks = Model.ToList()[1] as List<UPSCOApplicationServiceCenter.Models.LinkTable>;
+    List<UPSCOApplicationServiceCenter.Models.User> lstUsers = Model.ToList()[2] as List<UPSCOApplicationServiceCenter.Models.User>;
+
+}
+
+<h2>Create Application With Support Assigned</h2>
+
+<h3>Application Names</h3>
+<ul>
+    @foreach(var item in lstApplications) {
+     <li>@item.applicationName</li>
+    }
+</ul>
+<hr />
+<h3>Application Modules</h3>
+<ul>
+    @foreach (var item in lstApplications)
+    {
+    <li>@item.applicationModule</li>
+    }
+</ul>
+
+<hr />
+<h3>User Names</h3>
+<ul>
+    @foreach (var item in lstUsers)
+    {
+    <li>@item.userFirstName + " " + @item.userLastName</li>
+    }
+</ul>
+
+<hr />
+<h3>Assignment of Application</h3>
+<ul>
+    @foreach (var item in lstLinks)
+    {
+    <li>@item.applicationID</li>
+    }
+</ul>
+
+<h3>Assignment as Power User</h3>
+<ul>
+    @foreach (var item in lstLinks)
+    {
+    <li>@item.userID</li>
+    }
+</ul>
+
+
+
