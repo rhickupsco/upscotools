@@ -10,8 +10,10 @@
 Option Strict On
 Option Explicit On
 
-
-Partial Public Class 
+''' <summary>
+''' This keeps getting wiped Value should be Partial Public Class upscodatatools
+''' </summary>
+Partial Public Class upscodatatools
 
     '''<summary>
     '''Head control.

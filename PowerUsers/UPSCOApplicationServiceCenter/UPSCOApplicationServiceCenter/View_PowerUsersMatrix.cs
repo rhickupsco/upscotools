@@ -20,5 +20,6 @@ namespace UPSCOApplicationServiceCenter
         public string userLastName { get; set; }
         public string userEmailAddress { get; set; }
         public string userExtension { get; set; }
+        public int id { get; set; }
     }
 }

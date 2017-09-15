@@ -35,12 +35,14 @@
 warning 6002: The table/view 'SupportBackup.dbo.View_PowerUsersMatrix' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="View_PowerUsersMatrix">
           <Key>
+            <PropertyRef Name="id" />
             <PropertyRef Name="applicationName" />
             <PropertyRef Name="userFirstName" />
             <PropertyRef Name="userLastName" />
             <PropertyRef Name="userEmailAddress" />
             <PropertyRef Name="userExtension" />
           </Key>
+          <Property Name="id" Type="int" Nullable="false" />
           <Property Name="applicationName" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="applicationModule" Type="varchar" MaxLength="50" />
           <Property Name="userFirstName" Type="varchar" MaxLength="20" Nullable="false" />
@@ -54,6 +56,7 @@ warning 6002: The table/view 'SupportBackup.dbo.View_PowerUsersMatrix' does not 
           <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="View_PowerUsersMatrix" EntityType="Self.View_PowerUsersMatrix" store:Type="Views" store:Schema="dbo">
             <DefiningQuery>SELECT 
+    [View_PowerUsersMatrix].[id] AS [id], 
     [View_PowerUsersMatrix].[applicationName] AS [applicationName], 
     [View_PowerUsersMatrix].[applicationModule] AS [applicationModule], 
     [View_PowerUsersMatrix].[userFirstName] AS [userFirstName], 
@@ -106,6 +109,7 @@ warning 6002: The table/view 'SupportBackup.dbo.View_PowerUsersMatrix' does not 
             <PropertyRef Name="userLastName" />
             <PropertyRef Name="userEmailAddress" />
             <PropertyRef Name="userExtension" />
+            <PropertyRef Name="id" />
           </Key>
           <Property Name="applicationName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="applicationModule" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
@@ -113,6 +117,7 @@ warning 6002: The table/view 'SupportBackup.dbo.View_PowerUsersMatrix' does not 
           <Property Name="userLastName" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="userEmailAddress" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="userExtension" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="Int32" Nullable="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -151,6 +156,7 @@ warning 6002: The table/view 'SupportBackup.dbo.View_PowerUsersMatrix' does not 
           <EntitySetMapping Name="View_PowerUsersMatrix">
             <EntityTypeMapping TypeName="sbModel.View_PowerUsersMatrix">
               <MappingFragment StoreEntitySet="View_PowerUsersMatrix">
+                <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="userExtension" ColumnName="userExtension" />
                 <ScalarProperty Name="userEmailAddress" ColumnName="userEmailAddress" />
                 <ScalarProperty Name="userLastName" ColumnName="userLastName" />
@@ -175,7 +181,7 @@ warning 6002: The table/view 'SupportBackup.dbo.View_PowerUsersMatrix' does not 
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
         <DesignerProperty Name="EnablePluralization" Value="true" />
-        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="False" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
       </DesignerInfoPropertySet>

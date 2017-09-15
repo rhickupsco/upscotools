@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LabelPrinter.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="dbConnection" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Dsn=SAGE 100 2014;uid=swk;company=UMD;pwd=indigo01;description=MAS 90 4.0 ODBC Driver;directory=D:\Sage\Version_2014\MAS90;prefix=D:\Sage\Version_2014\MAS90\SY\, D:\Sage\Version_2014\MAS90\==\;viewdll=D:\Sage\Version_2014\MAS90\Home\;logfile=\PVXODBC.LOG;remotepvkiohost=MAS3;remotepvkioport=20222;cachesize=4;dirtyreads=1;burstmode=1;striptrailingspaces=1;server=NotTheServer</Value>
+    </Setting>
+    <Setting Name="labelsPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">F:\IT-BarTender\NiceLabel_ProductionLabels</Value>
+    </Setting>
+    <Setting Name="SqlDbConnection" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=SQL1\SQL2016;Initial Catalog=Labels;User ID=labelPrinter;Password=printThat</Value>
+    </Setting>
+    <Setting Name="QtyOverride" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

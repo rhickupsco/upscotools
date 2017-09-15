@@ -294,8 +294,8 @@
     <Content Include="Views\Users\Details.cshtml" />
     <Content Include="Views\Users\Edit.cshtml" />
     <Content Include="Views\Users\Index.cshtml" />
-    <Content Include="Views\Home\Matrix.cshtml" />
     <Content Include="Views\Applications\Details.cshtml" />
+    <Content Include="Views\Home\Matrix.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

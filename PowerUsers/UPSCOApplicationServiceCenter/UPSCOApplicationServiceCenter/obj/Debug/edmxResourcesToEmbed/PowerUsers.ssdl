@@ -30,12 +30,14 @@
 warning 6002: The table/view 'SupportBackup.dbo.View_PowerUsersMatrix' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="View_PowerUsersMatrix">
     <Key>
+      <PropertyRef Name="id" />
       <PropertyRef Name="applicationName" />
       <PropertyRef Name="userFirstName" />
       <PropertyRef Name="userLastName" />
       <PropertyRef Name="userEmailAddress" />
       <PropertyRef Name="userExtension" />
     </Key>
+    <Property Name="id" Type="int" Nullable="false" />
     <Property Name="applicationName" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="applicationModule" Type="varchar" MaxLength="50" />
     <Property Name="userFirstName" Type="varchar" MaxLength="20" Nullable="false" />
@@ -49,6 +51,7 @@ warning 6002: The table/view 'SupportBackup.dbo.View_PowerUsersMatrix' does not 
     <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="View_PowerUsersMatrix" EntityType="Self.View_PowerUsersMatrix" store:Type="Views" store:Schema="dbo">
       <DefiningQuery>SELECT 
+    [View_PowerUsersMatrix].[id] AS [id], 
     [View_PowerUsersMatrix].[applicationName] AS [applicationName], 
     [View_PowerUsersMatrix].[applicationModule] AS [applicationModule], 
     [View_PowerUsersMatrix].[userFirstName] AS [userFirstName], 

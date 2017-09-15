@@ -39,6 +39,7 @@
       <PropertyRef Name="userLastName" />
       <PropertyRef Name="userEmailAddress" />
       <PropertyRef Name="userExtension" />
+      <PropertyRef Name="id" />
     </Key>
     <Property Name="applicationName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="applicationModule" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
@@ -46,5 +47,6 @@
     <Property Name="userLastName" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
     <Property Name="userEmailAddress" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="userExtension" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="id" Type="Int32" Nullable="false" />
   </EntityType>
 </Schema>

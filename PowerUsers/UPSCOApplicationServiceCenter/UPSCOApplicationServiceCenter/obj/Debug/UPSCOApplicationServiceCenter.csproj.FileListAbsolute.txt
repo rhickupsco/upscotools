@@ -1,4 +1,3 @@
-C:\myGit\upscotools\PowerUsers\UPSCOApplicationServiceCenter\UPSCOApplicationServiceCenter\obj\Debug\UPSCOApplicationServiceCenter.csprojResolveAssemblyReference.cache
 C:\myGit\upscotools\PowerUsers\UPSCOApplicationServiceCenter\UPSCOApplicationServiceCenter\bin\roslyn\csc.exe
 C:\myGit\upscotools\PowerUsers\UPSCOApplicationServiceCenter\UPSCOApplicationServiceCenter\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\myGit\upscotools\PowerUsers\UPSCOApplicationServiceCenter\UPSCOApplicationServiceCenter\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll

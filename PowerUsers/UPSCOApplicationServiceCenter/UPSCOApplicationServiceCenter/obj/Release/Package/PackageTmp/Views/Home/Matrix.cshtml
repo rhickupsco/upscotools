@@ -30,7 +30,8 @@
         </th>
     </tr>
 
-@foreach (var item in Model) {
+    @foreach (var item in Model)
+    {
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.applicationName)
@@ -51,9 +52,10 @@
             @Html.DisplayFor(modelItem => item.userExtension)
         </td>
         @*<td>
-             @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ })
-        </td>*@
+                 @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ })
+            </td>*@
     </tr>
-}
+    }
 
 </table>
+

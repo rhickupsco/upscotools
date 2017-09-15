@@ -32,6 +32,7 @@
     <EntitySetMapping Name="View_PowerUsersMatrix">
       <EntityTypeMapping TypeName="sbModel.View_PowerUsersMatrix">
         <MappingFragment StoreEntitySet="View_PowerUsersMatrix">
+          <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="userExtension" ColumnName="userExtension" />
           <ScalarProperty Name="userEmailAddress" ColumnName="userEmailAddress" />
           <ScalarProperty Name="userLastName" ColumnName="userLastName" />

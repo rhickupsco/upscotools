@@ -20,7 +20,7 @@
     <link href="Style/bootstrap.min.css" rel="stylesheet" />--%>
     <link href="Style/css/Jumbotron3Styles.css" rel="stylesheet" />
     <link href="Style/css/upscoStyle.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="Style/css/Jumbo2Styles.css" rel="stylesheet" />
     <%--<link href="Style/divTablesStyle.css" rel="stylesheet" />--%>
 

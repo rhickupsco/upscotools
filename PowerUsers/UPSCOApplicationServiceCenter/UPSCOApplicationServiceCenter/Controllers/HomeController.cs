@@ -33,9 +33,9 @@ namespace UPSCOApplicationServiceCenter.Controllers
 
         public ActionResult Matrix()
         {
-            var sortedList = from e in app.View_PowerUsersMatrix
-                       orderby e.applicationName, e.applicationModule
-                       select e;
+            var sortedList = from e in app.View_PowerUsersMatrix where e.id > 0
+                             orderby e.applicationName, e.applicationModule
+                             select e;
 
             return View(sortedList);
         }

@@ -179,7 +179,12 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:UPSCODataTools.upscoDataTools._Head">
+<member name="T:UPSCODataTools.upscodatatools">
+ <summary>
+ This keeps getting wiped Value should be Partial Public Class upscodatatools
+ </summary>
+</member>
+<member name="F:UPSCODataTools.upscodatatools._Head">
 <summary>
 Head control.
 </summary>
@@ -188,7 +193,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:UPSCODataTools.upscoDataTools._form1">
+<member name="F:UPSCODataTools.upscodatatools._form1">
 <summary>
 form1 control.
 </summary>
@@ -197,7 +202,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:UPSCODataTools.upscoDataTools._cp1">
+<member name="F:UPSCODataTools.upscodatatools._cp1">
 <summary>
 cp1 control.
 </summary>
@@ -206,7 +211,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:UPSCODataTools.upscoDataTools._cp2">
+<member name="F:UPSCODataTools.upscodatatools._cp2">
 <summary>
 cp2 control.
 </summary>
@@ -215,7 +220,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:UPSCODataTools.upscoDataTools._cp3">
+<member name="F:UPSCODataTools.upscodatatools._cp3">
 <summary>
 cp3 control.
 </summary>

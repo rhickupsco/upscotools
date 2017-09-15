@@ -250,7 +250,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/22/2017 09:27:55</publishTime>
     </File>
     <File Include="Jumbotron3.aspx">
-      <publishTime>08/24/2017 12:06:10</publishTime>
+      <publishTime>09/15/2017 11:39:06</publishTime>
     </File>
     <File Include="Jumbotron3.aspx.designer.vb">
       <publishTime>08/24/2017 09:38:31</publishTime>
@@ -397,7 +397,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/23/2017 16:58:32</publishTime>
     </File>
     <File Include="Style/css/upscoStyle.css">
-      <publishTime>08/24/2017 12:36:55</publishTime>
+      <publishTime>08/24/2017 13:23:09</publishTime>
     </File>
     <File Include="Style/cssReset.css">
       <publishTime>05/05/2017 12:27:17</publishTime>
@@ -640,7 +640,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/24/2017 09:35:58</publishTime>
     </File>
     <File Include="UpscoData.Master">
-      <publishTime>08/24/2017 13:09:37</publishTime>
+      <publishTime>09/15/2017 11:39:01</publishTime>
     </File>
     <File Include="UpscoData.Master.designer.vb">
       <publishTime>08/24/2017 12:47:52</publishTime>
