@@ -30,6 +30,31 @@ namespace Data_Access
             Connect(sql);
             return (Fill());
         }
+
+        public DataTable GetDynamicTableMultipleParams(OdbcCommand thisCommand)
+        {
+            DataTable dt = new DataTable();
+            Initialize(thisCommand);
+            //this assigns the connection to the comm object
+            Comm.Connection = Conn;
+            Comm.Connection.ConnectionTimeout = 300;
+            Comm.CommandTimeout = 6000;
+
+            try
+            {
+                //this establishes the connection ad opens it to the database, like a funnel
+                Conn.Open();
+                dt = Fill();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Connection to SAGE database failed in ODBCDataAccess -" + ex.Message.ToString());
+            }
+            return dt;
+        }
+
+      
+
         //This is the function you would call to return a single string value from a table such as "the value is green"
         //public string GetSingleString(string sql, OdbcParameter parameter = null)
         //{
@@ -90,6 +115,18 @@ namespace Data_Access
             //this is a container for the command that you will send it on its way with, such as "Select * from LabelsTable"
             Comm = new OdbcCommand();
         }
+
+        private void Initialize(OdbcCommand thisCommand)
+        {
+            Dt = new DataTable();
+            ConnectionString = LabelPrinter.Properties.Settings.Default.dbConnection;
+            //this builds a new connection to the database
+            Conn = new OdbcConnection(ConnectionString);
+            //this is a container for the command that you will send it on its way with, such as "Select * from LabelsTable"
+            Comm = thisCommand;
+        }
+
+
 
         private void Connect(string sql)
         {

@@ -97,10 +97,6 @@ namespace Data_Access
             return sql;
         }
 
-        //public static DataTable GetVariables(string TemplateName)
-        //{
-
-        //}
 
         private static string GetWorkOrderQueryStringFromHistory() ///////to be updated with new QUERY
         {
@@ -110,6 +106,88 @@ namespace Data_Access
 
             return sql;
         }
+
+        public static DataTable GetSalesOrderItems(string soNumber)
+        {
+
+            ODBCDataAccess bs = new ODBCDataAccess();
+
+            DataTable tblBuildData = new DataTable();
+            DataTable tblCurrent = new DataTable();
+            DataTable tblHistory = new DataTable();
+
+            OdbcParameter SOParam = new OdbcParameter();
+            OdbcParameter SOParam2 = new OdbcParameter();
+            
+            
+
+            string sql = null;
+            string sql2 = null;
+
+            sql = SalesOrderItemsQuery();
+            sql2 = SalesOrderItemsHistoryQuery();
+
+            //set the parameter equal to the customerNumber passed in
+            SOParam.Value = soNumber;
+            SOParam2.Value = soNumber;
+
+            tblCurrent = bs.GetDynamicTableFromQuery(sql2, SOParam);
+            tblHistory = bs.GetDynamicTableFromQuery(sql, SOParam2);
+
+            tblBuildData = tblCurrent.Copy();
+            tblBuildData.Merge(tblHistory);
+
+            return tblBuildData;
+
+        }
+
+        public static DataTable GetShippingLabelData(string soNumber, string itemCode, bool current, string query)
+        {
+
+            ODBCDataAccess bs = new ODBCDataAccess();
+
+            DataTable tblBuildData = new DataTable();
+            DataTable tblCurrent = new DataTable();
+            DataTable tblHistory = new DataTable();
+            OdbcCommand myOdbcCommand = new OdbcCommand();
+
+
+            myOdbcCommand.Parameters.AddWithValue("SalesOrderNo", soNumber); //first ? in statement
+            myOdbcCommand.Parameters.AddWithValue("ItemCode", itemCode); //second ? in statement
+            //myOdbcCommand.Parameters.AddWithValue("warehouse", warehouse); //third ? in statement
+
+            string sql = null;
+            sql = query;
+            if(current == false) {
+                sql = query.Replace("SO_SalesOrderDetail", "SO_SalesOrderHistoryDetail");
+                sql = sql.Replace("SO_SalesOrderHeader", "SO_SalesOrderHistoryHeader");
+            }
+
+             myOdbcCommand.CommandText = sql;
+             tblBuildData = bs.GetDynamicTableMultipleParams(myOdbcCommand);
+         //   tblHistory = bs.GetDynamicTableFromQuery(sql, SOParam2);
+
+         
+            return tblBuildData;
+
+        }
+
+
+        private static string SalesOrderItemsQuery()
+        {
+           string sql = string.Empty;
+            sql = "Select soh.salesOrderNo, sod.linekey linekey, sod.warehouseCode, sod.ItemCode from so_salesorderheader soh, so_salesorderdetail sod where soh.salesorderno = sod.salesorderno and soh.salesorderno = ? ";
+            return sql;
+        }
+
+        private static string SalesOrderItemsHistoryQuery()
+        {
+            string sql = string.Empty;
+            sql = "Select sohh.salesOrderNo, 'closed SO' linekey, sohd.warehouseCode, sohd.ItemCode from so_salesorderhistoryheader sohh, so_salesorderhistorydetail sohd where sohh.salesorderno = sohd.salesorderno and sohh.salesorderno = ? ";
+            return sql;
+        }
+
+       
 
 
         private static string GetCustomerNameQuery() {
@@ -152,6 +230,23 @@ namespace Data_Access
             stream.Close();
 
             return dbFile;
+        }
+
+        internal static DataTable GetFilteredTemplates(string askType)
+        {
+            ODBCDataAccess bs = new ODBCDataAccess();
+
+            DataTable tblBuildData = new DataTable();
+
+            OdbcParameter Param = new OdbcParameter();
+
+            Param.Value = askType;
+
+            string sql = "Select TemplateName, TemplateType from Labels where TemplateType = ?";
+
+            tblBuildData = bs.GetDynamicTableFromQuery(sql, Param);
+
+            return tblBuildData;
         }
 
 
