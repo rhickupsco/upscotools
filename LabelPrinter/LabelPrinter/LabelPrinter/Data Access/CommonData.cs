@@ -64,6 +64,22 @@ namespace Data_Access
             return tblBuildData;
         }
 
+        public static DataTable GetBomInfoDatatable(string labelNumbers, string sql)
+        {
+
+            ODBCDataAccess bs = new ODBCDataAccess();
+
+            DataTable tblBuildData = new DataTable();
+
+            OdbcParameter Param = new OdbcParameter();
+
+            Param.Value = labelNumbers;
+
+            tblBuildData = bs.GetDynamicTableFromQuery(sql, Param);
+
+            return tblBuildData;
+        }
+
 
         public static DataTable GetCustomerInfo(string customerNo)
         {
@@ -79,7 +95,7 @@ namespace Data_Access
             //set the parameter equal to the customerNumber passed in
             CustomerParam.Value = customerNo;
            
-            sql = GetCustomerNameQuery();
+            sql = GetBOMInfo();
          
             tblBuildData = bs.GetDynamicTableFromQuery(sql, CustomerParam);
            
@@ -103,6 +119,15 @@ namespace Data_Access
             string sql = string.Empty;
 
             sql = "SELECT WOL.WorkOrder, WOL.WODueDate, WOL.StdLaborCost, WOL.SOCustNumber, WOL.MakeForOrderNumber, WOL.ActualLaborCost, WOL.ItemBillNumber, WOL.ItemDescription, MakeFor FROM WOL_WorkOrderHistoryHeader WOL WHERE(WOL.WorkOrder =?)";
+
+            return sql;
+        }
+
+        private static string GetBOMInfo()
+        {
+            string sql = string.Empty;
+
+            sql = "SELECT WO1_WorkOrderMaster.WorkOrder, WO2_WorkOrderMaterialDetail.ComponentItemNumber, WO1_WorkOrderMaster.ItemBillNumber FROM WO1_WorkOrderMaster WO1_WorkOrderMaster, WO2_WorkOrderMaterialDetail WO2_WorkOrderMaterialDetail WHERE WO2_WorkOrderMaterialDetail.WorkOrder = WO1_WorkOrderMaster.WorkOrder AND((WO1_WorkOrderMaster.WorkOrder = ? ))";
 
             return sql;
         }

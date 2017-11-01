@@ -86,10 +86,24 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <Content Include="Images\100American.png" />
     <Content Include="Images\a_boos.jpg" />
     <Content Include="Images\BlackLogo.png" />
+    <Content Include="Images\carlton.gif" />
     <Content Include="Images\company50Logo.png" />
     <Content Include="Images\station.jpg" />
     <Content Include="Images\crown.png" />
@@ -103,8 +117,8 @@
     <Content Include="Images\bypass.png" />
     <Content Include="Images\drawing.jpg" />
     <Content Include="Images\upscoLogo.jpg" />
-    <Content Include="JumboTron2.aspx" />
-    <Content Include="Jumbotron3.aspx" />
+    <Content Include="JumboTronNorth.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.1.0.js" />
     <Content Include="Scripts\jquery-3.1.0.min.js" />
@@ -118,14 +132,11 @@
     <Content Include="Scripts\slider.js" />
     <Content Include="Style\css\bootstrap.min.css" />
     <Content Include="Style\css\cssReset.css" />
-    <Content Include="Style\css\divTablesStyle.css" />
     <Content Include="Style\css\font-awesome.css" />
     <Content Include="Style\css\fa.min.css" />
+    <Content Include="Style\css\jumbo.css" />
     <Content Include="Style\fonts\fontawesome-webfont.svg" />
     <Content Include="Style\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Style\css\Jumbo2Styles.css" />
-    <Content Include="Style\css\jumbotron3Styles.css" />
-    <Content Include="Style\css\upscoStyle.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -133,19 +144,12 @@
   <ItemGroup>
     <Compile Include="Data Access\Common.vb" />
     <Compile Include="DepartmentSummaries.vb" />
-    <Compile Include="JumboTron2.aspx.designer.vb">
-      <DependentUpon>JumboTron2.aspx</DependentUpon>
+    <Compile Include="JumboTronNorth.aspx.designer.vb">
+      <DependentUpon>JumboTronNorth.aspx</DependentUpon>
     </Compile>
-    <Compile Include="JumboTron2.aspx.vb">
-      <DependentUpon>JumboTron2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Jumbotron3.aspx.designer.vb">
-      <DependentUpon>Jumbotron3.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Jumbotron3.aspx.vb">
-      <DependentUpon>Jumbotron3.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="JumboTronNorth.aspx.vb">
+      <DependentUpon>JumboTronNorth.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

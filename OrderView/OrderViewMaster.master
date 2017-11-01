@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="OrderViewMaster.master.cs" Inherits="OrderViewMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <title>UPSCO Order View</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="styles/masterStyle.css">
+    <asp:ContentPlaceHolder id="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body class="d-flex justify-content-center upscoAlternateColors">
+<asp:ContentPlaceHolder ID="ContentPlaceHolder0" runat="server">
+<div id="LogoArea"></div>
+</asp:ContentPlaceHolder>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

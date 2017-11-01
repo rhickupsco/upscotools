@@ -53,7 +53,7 @@ UPSCODataTools
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="F:UPSCODataTools.JumboTron2._nip">
+<member name="F:UPSCODataTools.JumboTronNorth._nip">
 <summary>
 nip control.
 </summary>
@@ -62,106 +62,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:UPSCODataTools.JumboTron2._non">
-<summary>
-non control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:UPSCODataTools.JumboTron2._cert">
-<summary>
-cert control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:UPSCODataTools.JumboTron2._build">
-<summary>
-build control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:UPSCODataTools.JumboTron2._test1">
-<summary>
-test1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:UPSCODataTools.JumboTron2._test2">
-<summary>
-test2 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:UPSCODataTools.JumboTron2._paint">
-<summary>
-paint control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:UPSCODataTools.Jumbotron3._nip">
-<summary>
-nip control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:UPSCODataTools.Jumbotron3._ncw">
-<summary>
-ncw control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:UPSCODataTools.Jumbotron3._cw">
-<summary>
-cw control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:UPSCODataTools.Jumbotron3._bld">
-<summary>
-bld control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:UPSCODataTools.Jumbotron3._tst">
-<summary>
-tst control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:UPSCODataTools.Jumbotron3._tst2">
+<member name="F:UPSCODataTools.JumboTronNorth._tst2">
 <summary>
 tst2 control.
 </summary>
@@ -170,16 +71,25 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:UPSCODataTools.Jumbotron3._pnt">
+<member name="F:UPSCODataTools.JumboTronNorth._ncw">
 <summary>
-pnt control.
+ncw control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:UPSCODataTools.upscoDataTools._Head">
+<member name="F:UPSCODataTools.JumboTronNorth._cw">
+<summary>
+cw control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UPSCODataTools.UpscoDatatools._Head">
 <summary>
 Head control.
 </summary>
@@ -188,7 +98,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:UPSCODataTools.upscoDataTools._form1">
+<member name="F:UPSCODataTools.UpscoDatatools._form1">
 <summary>
 form1 control.
 </summary>
@@ -197,7 +107,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:UPSCODataTools.upscoDataTools._cp1">
+<member name="F:UPSCODataTools.UpscoDatatools._cp1">
 <summary>
 cp1 control.
 </summary>
@@ -206,7 +116,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:UPSCODataTools.upscoDataTools._cp2">
+<member name="F:UPSCODataTools.UpscoDatatools._cp2">
 <summary>
 cp2 control.
 </summary>
@@ -215,7 +125,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:UPSCODataTools.upscoDataTools._cp3">
+<member name="F:UPSCODataTools.UpscoDatatools._cp3">
 <summary>
 cp3 control.
 </summary>

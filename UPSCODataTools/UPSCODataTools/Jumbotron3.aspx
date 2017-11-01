@@ -4,7 +4,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="cp1" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cp2" runat="server">
-<div class="title" id="time"></div>
 <div id="slide-window" style="margin-top: 110px;margin-bottom: 50px;">
     <ol id="slides" start="1">    
       <li class="slide color-0 alive countMe">

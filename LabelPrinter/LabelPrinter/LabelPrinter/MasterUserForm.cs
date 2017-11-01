@@ -75,9 +75,6 @@ namespace LabelPrinter
 
             cbTemplates.SelectedIndex = 0;
 
-
-
-
         }
         
         private void btnPrint_Click_1(object sender, EventArgs e)
@@ -124,7 +121,7 @@ namespace LabelPrinter
             string woNumber = txtWONumber.Text.ToString().Trim();
             if (optionalParams != "none")
             {
-               if(UserVariablesUsed.Contains("startingSerialNumber")  && txtStartingSerNo.Text.Length > 1)
+               if(UserVariablesUsed.Contains("StartingSerialNumber")  && txtStartingSerNo.Text.Length > 1)
                {
                  LabelTemplate.Variables["StartingSerialNumber"].SetValue(txtStartingSerNo.Text);                    
                }
@@ -252,7 +249,7 @@ namespace LabelPrinter
                     else if (labelType == "fabrication")
                     {
                         width = 600;
-                        height = 300;
+                        height = 400;
                     }
                     else if (labelType == "location" || labelType == "pressure")
                     {
@@ -440,8 +437,13 @@ namespace LabelPrinter
             {
                 if (SelectedLabel.GetLabelType().ToString().TrimEnd() == "box" || SelectedLabel.GetLabelType().ToString().TrimEnd() == "fabrication")                {
                
-                    dt = CommonData.GetDataFromQuery(query, woNumber); ;
+                    dt = CommonData.GetDataFromQuery(query, woNumber);
                 }
+            }
+
+            else
+            {
+                dt = CommonData.GetDataFromQuery(query, woNumber);
             }
 
                 //THIS POPULATES ALL THE NAMED VARIABLES FROM THE LABELS DATABASE

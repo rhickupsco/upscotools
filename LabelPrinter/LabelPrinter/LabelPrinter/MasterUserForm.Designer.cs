@@ -63,7 +63,6 @@
             this.panel1.SuspendLayout();
             this.pnlMatching.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPreview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ttUserInput)).BeginInit();
             this.pnlOverrideValues.SuspendLayout();
@@ -269,7 +268,7 @@
             this.cbShippingItems.FormattingEnabled = true;
             this.cbShippingItems.Location = new System.Drawing.Point(13, 116);
             this.cbShippingItems.Name = "cbShippingItems";
-            this.cbShippingItems.Size = new System.Drawing.Size(235, 28);
+            this.cbShippingItems.Size = new System.Drawing.Size(253, 28);
             this.cbShippingItems.TabIndex = 58;
             this.cbShippingItems.Visible = false;
             this.cbShippingItems.SelectedIndexChanged += new System.EventHandler(this.cbShippingItems_SelectedIndexChanged);
@@ -341,8 +340,7 @@
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.flowLayoutPanel2.Controls.Add(this.pictureBoxPreview);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(470, 84);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(291, 84);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(541, 336);
             this.flowLayoutPanel2.TabIndex = 51;
@@ -352,7 +350,7 @@
             this.pictureBoxPreview.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBoxPreview.BackColor = System.Drawing.SystemColors.WindowText;
             this.pictureBoxPreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxPreview.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxPreview.Location = new System.Drawing.Point(291, 95);
             this.pictureBoxPreview.Name = "pictureBoxPreview";
             this.pictureBoxPreview.Size = new System.Drawing.Size(535, 319);
             this.pictureBoxPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -367,11 +365,11 @@
             // btnPrint
             // 
             this.btnPrint.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPrint.BackColor = System.Drawing.Color.Lime;
             this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPrint.Font = new System.Drawing.Font("Gorilla", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrint.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnPrint.Image = global::LabelPrinter.Properties.Resources.backImage;
-            this.btnPrint.Location = new System.Drawing.Point(294, 75);
+            this.btnPrint.Location = new System.Drawing.Point(736, 528);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(170, 51);
             this.btnPrint.TabIndex = 52;
@@ -415,6 +413,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(918, 591);
+            this.Controls.Add(this.pictureBoxPreview);
             this.Controls.Add(this.pnlOverrideValues);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.flowLayoutPanel2);
@@ -433,7 +432,6 @@
             this.pnlMatching.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPreview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ttUserInput)).EndInit();
             this.pnlOverrideValues.ResumeLayout(false);

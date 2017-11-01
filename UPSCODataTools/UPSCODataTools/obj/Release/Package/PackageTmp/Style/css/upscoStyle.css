@@ -96,8 +96,8 @@ border-bottom: 6px double rgb(1,85,109);
 background-color: black;
 min-height: 30px;
 line-height: 36px;
-
 }
+
 .title{
 width: 100%;
 text-align:center;
@@ -109,14 +109,6 @@ border-bottom: 6px double rgb(1,85,109);
 background-color: black;
 min-height: 30px;
 line-height: 40px;
-}
-
-.deptSection{
-font-size: 2em;
-color: darkorange;
-line-height:40px;
-width:auto;
-background-color: steelblue;
 }
 
 #Summary{
@@ -178,7 +170,13 @@ width: 100%;
 margin: 5px auto; 
 }
 
-
+.deptSection{
+font-size: 2em;
+color: yellow;
+line-height:40px;
+width:auto;
+background-color: steelblue;
+}
 
 
 @media print {
@@ -202,6 +200,7 @@ margin: 5px auto;
     }
 
     .title {
+        width: 100% auto;
         font-size: 3rem;
         border-bottom: 0px;
     }

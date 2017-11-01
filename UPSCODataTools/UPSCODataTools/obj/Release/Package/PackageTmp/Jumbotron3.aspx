@@ -4,7 +4,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="cp1" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cp2" runat="server">
-<div class="title" id="time"></div>
 <div id="slide-window" style="margin-top: 110px;margin-bottom: 50px;">
     <ol id="slides" start="1">    
       <li class="slide color-0 alive countMe">
@@ -174,16 +173,15 @@
  
 
     
-    <%--<div id="credit"><span id="count">1</span></div>--%>
+ <%--   <div id="credit"><span id="count">1</span></div>
     
     </div>
-  
+  --%>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="cp3" runat="server">
   <div id="banner">
         <div id="banner-content">
-            <span style="display: block !important; width: 100%; text-align: center; font-family: FontAwesome; font-size: 12px;"><a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:13118.1.99999&bannertypeclick=wu_clean2day" title="Moravia, New York Weather Forecast" target="_blank">
-                <img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_clean2day_cond&airportcode=KN03&ForcedCity=Moravia&ForcedState=NY&zip=13118&language=EN" alt="Find more about Weather in Moravia, NY" width="300" /></a></span>
+            <span style="display: block !important; margin: auto; width: 900px; height: 100px; text-align: center; font-family: FontAwesome; font-size: 12px; overflow:hidden;"><iframe style="display: block; " src="//cdnres.willyweather.com/widget/loadView.html?id=71626" height="92" width="900"></iframe><a style="width: 20px; height: 95px; width: !important  100%; position: relative; margin: auto; clear: both; text-align:center;" href="http://www.willyweather.com/ny/cayuga-county/moravia.html" rel="nofollow">moravia weather forecast</a></span>
         </div>
         <div id="shipDate" class="title stroke"><%=Shipdate%></div>  
 

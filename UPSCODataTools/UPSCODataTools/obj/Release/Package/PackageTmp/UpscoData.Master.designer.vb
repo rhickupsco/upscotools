@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class upscoDataTools
+Partial Public Class UpscoDatatools
 
     '''<summary>
     '''Head control.

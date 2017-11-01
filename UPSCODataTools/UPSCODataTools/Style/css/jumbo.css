@@ -1,0 +1,182 @@
+﻿body{
+    font-family:FontAwesome, 'Times New Roman', Times, serif;
+    background-image:linear-gradient(
+    black, steelblue
+    );
+    overflow-y:auto;
+    min-width: 100px;
+    overflow-x: hidden;
+}
+
+#time{
+position:relative;
+top: 0px;
+height: 45px;
+}
+
+.title{
+width: 100%;
+text-align:center;
+vertical-align: middle;
+font-size: 3em;
+color:whitesmoke;
+
+background-color: black;
+min-height: 10px;
+line-height: 40px;
+}
+
+header{
+height:113px;
+padding:2px;
+background-image: url('../../Images/blackLogo.png');
+background-repeat:round no-repeat;
+background-size: auto;
+margin-top:3px;
+opacity:1;
+z-index:2;
+    border-left-style: none;
+    border-left-color: inherit;
+    border-left-width: medium;
+    border-right-style: none;
+    border-right-color: inherit;
+    border-right-width: medium;
+    border-top-style: solid;
+    border-top-color: inherit;
+    border-top-width: thin;
+    border-bottom-style: solid;
+    border-bottom-color: inherit;
+    border-bottom-width: thin;
+}
+
+.workCenterTitle{
+background-image:linear-gradient(
+    black, steelblue
+    );
+    color: white;
+    margin-top: -42px;
+    width: 100%;
+    line-height: 150px;
+}
+
+
+.wrapper{
+height:auto !important;
+height: 99%;
+text-align:center;
+margin: 0 auto;
+
+}
+
+#content{
+min-height:calc(98vh - 2600px);
+max-height:100vh;
+height:auto;
+margin-bottom:-30px;
+
+}
+
+#banner { 
+position:relative;
+bottom: 45px; 
+opacity:1;
+background-color: black;
+width: 100%;
+
+}
+
+#shipDate{
+font-size: 4em;
+line-height: 50px;
+margin-bottom: -5px
+}
+
+#banner-content .banner-content{ 
+width: 100%; 
+margin: 5px auto; 
+
+}
+
+#encourage{
+margin-bottom: -120px;
+padding-top: 0px;
+font-size: 3em;
+text-align: center;
+color:lawngreen
+}
+
+
+.metrics>li{
+font-size: 3.0em;
+text-align:justify;
+padding-left: 15px;
+}
+.deptSection{
+font-size: 1em;
+text-align:center;
+color: yellow;
+line-height:60px;
+width:98%;
+background-color: steelblue;
+position: relative;
+left:0px;
+}
+
+
+
+.carlton{
+background-image: url('../../Images/carlton.gif');
+}
+
+.excellent{ background-color:lawngreen;
+}
+.error{background-color:orange;
+}     
+.mediocre{ background-color:yellow;
+}
+.behind{ background-color:red;
+color:white;
+}
+
+
+@media print {
+
+    footer {
+        display: block;
+        font: 12pt Georgia, "Times New Roman", Times, serif;
+    }
+
+    header {
+        display: none;
+    }
+
+    #wrapper {
+        font: 8pt Georgia, "Times New Roman", Times, serif;
+        line-height: 1.0;
+        width: 100%;
+        height: 100%;
+        margin: 0% 0% 0% 0%;
+        filter: progid:DXImageTransform.Microsoft.BasicImage(Rotation=3);
+    }
+
+    .title {
+        width: 100% auto;
+        font-size: 3rem;
+        border-bottom: 0px;
+    }
+
+   
+
+    .deptSection {
+        width: 100%;
+        background-color:white;
+
+    }
+
+    .stroke {
+        color: black;
+        text-shadow: none;
+    }
+
+   
+}

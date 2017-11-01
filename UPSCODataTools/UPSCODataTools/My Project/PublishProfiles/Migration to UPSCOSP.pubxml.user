@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>Z:\inetpub\wwwroot\UpscoTools\Jumbotron2</_PublishTargetUrl>
+    <_PublishTargetUrl>Z:\inetpub\wwwroot\UpscoTools\JumbotronNorth</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
@@ -55,13 +55,37 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/18/2015 17:07:08</publishTime>
     </File>
     <File Include="bin/UPSCODataTools.dll">
-      <publishTime>08/24/2017 12:39:12</publishTime>
+      <publishTime>11/01/2017 11:16:19</publishTime>
     </File>
     <File Include="bin/UPSCODataTools.dll.config">
-      <publishTime>07/26/2017 14:09:55</publishTime>
+      <publishTime>11/01/2017 11:16:19</publishTime>
     </File>
     <File Include="bin/UPSCODataTools.xml">
-      <publishTime>08/24/2017 12:39:12</publishTime>
+      <publishTime>11/01/2017 11:16:19</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>10/27/2017 12:27:50</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>10/27/2017 12:27:50</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>10/27/2017 12:27:50</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>10/27/2017 12:27:50</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>10/27/2017 12:27:50</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>10/27/2017 12:27:50</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>10/27/2017 12:27:50</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>10/27/2017 12:27:50</publishTime>
     </File>
     <File Include="Data Access/Common.vb">
       <publishTime>08/24/2017 11:53:26</publishTime>
@@ -78,6 +102,21 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="DepartmentSummaries.vb">
       <publishTime>04/10/2017 14:18:11</publishTime>
     </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>10/27/2017 12:27:50</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>10/27/2017 12:27:50</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>10/27/2017 12:27:50</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>10/27/2017 12:27:50</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>10/27/2017 12:27:50</publishTime>
+    </File>
     <File Include="Images/100American.png">
       <publishTime>08/22/2017 11:05:38</publishTime>
     </File>
@@ -89,6 +128,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Images/bypass.png">
       <publishTime>08/22/2017 10:58:44</publishTime>
+    </File>
+    <File Include="Images/carlton.gif">
+      <publishTime>10/27/2017 16:29:13</publishTime>
     </File>
     <File Include="Images/company50Logo.png">
       <publishTime>05/05/2017 12:26:54</publishTime>
@@ -244,19 +286,37 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/22/2017 09:28:08</publishTime>
     </File>
     <File Include="JumboTron2.aspx.designer.vb">
-      <publishTime>08/22/2017 09:28:02</publishTime>
+      <publishTime>10/27/2017 12:58:15</publishTime>
     </File>
     <File Include="JumboTron2.aspx.vb">
       <publishTime>08/22/2017 09:27:55</publishTime>
     </File>
     <File Include="Jumbotron3.aspx">
-      <publishTime>09/15/2017 11:39:06</publishTime>
+      <publishTime>10/27/2017 12:17:24</publishTime>
     </File>
     <File Include="Jumbotron3.aspx.designer.vb">
-      <publishTime>08/24/2017 09:38:31</publishTime>
+      <publishTime>10/27/2017 13:03:33</publishTime>
     </File>
     <File Include="Jumbotron3.aspx.vb">
       <publishTime>08/24/2017 10:26:08</publishTime>
+    </File>
+    <File Include="JumboTronMain.aspx">
+      <publishTime>11/01/2017 10:49:59</publishTime>
+    </File>
+    <File Include="JumboTronMain.aspx.designer.vb">
+      <publishTime>11/01/2017 10:41:45</publishTime>
+    </File>
+    <File Include="JumboTronMain.aspx.vb">
+      <publishTime>11/01/2017 10:39:43</publishTime>
+    </File>
+    <File Include="JumboTronNorth.aspx">
+      <publishTime>11/01/2017 11:16:19</publishTime>
+    </File>
+    <File Include="JumboTronNorth.aspx.designer.vb">
+      <publishTime>10/27/2017 17:01:58</publishTime>
+    </File>
+    <File Include="JumboTronNorth.aspx.vb">
+      <publishTime>10/27/2017 17:21:37</publishTime>
     </File>
     <File Include="My Project/Application.Designer.vb">
       <publishTime>05/05/2017 11:59:04</publishTime>
@@ -277,10 +337,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/10/2017 14:59:19</publishTime>
     </File>
     <File Include="My Project/PublishProfiles/Migration to UPSCOSP.pubxml">
-      <publishTime>08/24/2017 12:39:32</publishTime>
+      <publishTime>11/01/2017 11:17:28</publishTime>
     </File>
     <File Include="My Project/PublishProfiles/Migration to UPSCOSP.pubxml.user">
-      <publishTime>08/24/2017 12:34:43</publishTime>
+      <publishTime>11/01/2017 11:13:35</publishTime>
     </File>
     <File Include="My Project/Resources.Designer.vb">
       <publishTime>05/05/2017 11:59:04</publishTime>
@@ -295,7 +355,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/19/2016 15:50:50</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>05/05/2017 11:59:04</publishTime>
+      <publishTime>10/27/2017 12:27:50</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
       <publishTime>05/05/2017 11:20:24</publishTime>
@@ -306,8 +366,11 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/ai.0.22.19-build00125.min.js">
       <publishTime>08/24/2016 01:20:50</publishTime>
     </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>10/27/2017 12:27:50</publishTime>
+    </File>
     <File Include="Scripts/bootstrap.min.js">
-      <publishTime>08/22/2017 14:15:12</publishTime>
+      <publishTime>10/27/2017 12:27:50</publishTime>
     </File>
     <File Include="Scripts/jquery-1.12.4.min.js">
       <publishTime>10/19/2016 15:50:50</publishTime>
@@ -367,7 +430,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/16/2016 08:47:20</publishTime>
     </File>
     <File Include="Scripts/slider.js">
-      <publishTime>08/24/2017 13:09:37</publishTime>
+      <publishTime>08/31/2017 11:30:01</publishTime>
     </File>
     <File Include="Service References/Application Insights/ConnectedService.json">
       <publishTime>08/24/2016 01:20:50</publishTime>
@@ -390,14 +453,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Style/css/font-awesome.css">
       <publishTime>08/22/2017 10:30:37</publishTime>
     </File>
+    <File Include="Style/css/jumbo.css">
+      <publishTime>11/01/2017 11:07:37</publishTime>
+    </File>
     <File Include="Style/css/Jumbo2Styles.css">
-      <publishTime>08/24/2017 10:22:55</publishTime>
+      <publishTime>10/27/2017 15:00:13</publishTime>
     </File>
     <File Include="Style/css/jumbotron3Styles.css">
       <publishTime>08/23/2017 16:58:32</publishTime>
     </File>
     <File Include="Style/css/upscoStyle.css">
-      <publishTime>08/24/2017 13:23:09</publishTime>
+      <publishTime>10/27/2017 14:51:50</publishTime>
     </File>
     <File Include="Style/cssReset.css">
       <publishTime>05/05/2017 12:27:17</publishTime>
@@ -640,22 +706,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/24/2017 09:35:58</publishTime>
     </File>
     <File Include="UpscoData.Master">
-      <publishTime>09/15/2017 11:39:01</publishTime>
+      <publishTime>10/27/2017 15:12:43</publishTime>
     </File>
     <File Include="UpscoData.Master.designer.vb">
-      <publishTime>08/24/2017 12:47:52</publishTime>
+      <publishTime>10/27/2017 12:21:23</publishTime>
     </File>
     <File Include="UpscoData.Master.vb">
       <publishTime>10/19/2016 15:50:50</publishTime>
     </File>
     <File Include="UPSCODataTools.vbproj">
-      <publishTime>08/24/2017 12:36:46</publishTime>
+      <publishTime>11/01/2017 11:16:16</publishTime>
     </File>
     <File Include="UPSCODataTools.vbproj.user">
-      <publishTime>08/24/2017 12:36:46</publishTime>
+      <publishTime>11/01/2017 11:16:16</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>08/24/2017 12:39:33</publishTime>
+      <publishTime>11/01/2017 11:17:29</publishTime>
     </File>
     <File Include="Web.Debug.config">
       <publishTime>10/19/2016 15:50:50</publishTime>

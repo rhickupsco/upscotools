@@ -24,9 +24,13 @@ $(document).ready(function () {
 
 
     setInterval(function () {
-        location.reload();
         Slide('forward');
-    }, 20000);
+    }, 30000);
+
+    //This is set to 30 seconds times number of slides in deck
+    setInterval(function () {
+        location.reload();
+    }, 210000);
 
     $('#left').click(function () { Slide('back'); });
     $('#right').click(function () { Slide('forward'); });

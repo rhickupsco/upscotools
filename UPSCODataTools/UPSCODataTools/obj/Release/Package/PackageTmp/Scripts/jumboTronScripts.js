@@ -8,7 +8,7 @@
 
     setInterval(function () {
         location.reload();
-    }, 12000);
+    }, 600000);
 
 
 });

@@ -33,3 +33,4 @@ C:\myGit\upscotools\DocScan\DocScanWO\obj\x86\Release\DocScanWO.frmMain.resource
 C:\myGit\upscotools\DocScan\DocScanWO\obj\x86\Release\DocScanWO.Properties.Resources.resources
 C:\myGit\upscotools\DocScan\DocScanWO\obj\x86\Release\DocScanWO.Splash.resources
 C:\myGit\upscotools\DocScan\DocScanWO\obj\x86\Release\DocScanWO.csproj.GenerateResource.Cache
+C:\myGit\upscotools\DocScan\DocScanWO\obj\x86\Release\DocScanWO.csprojResolveAssemblyReference.cache

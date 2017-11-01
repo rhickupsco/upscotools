@@ -73,6 +73,11 @@ margin-bottom:1px;
 padding-bottom:5px;
 }
 
+#time{
+position:relative;
+top: 0px;
+}
+
 .excellent{ background-color:lawngreen;
 }
 .error{background-color:orange;
