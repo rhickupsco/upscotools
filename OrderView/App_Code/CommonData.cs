@@ -10,17 +10,18 @@ namespace Data_Access
     public static class CommonData
     {
         public static DataSet AllData = new DataSet();
+        public static DateTime DefaultDate = new DateTime(1900, 1, 1);
         //public static DataTable GetSalesOrderData()
         //{
-         
+
         //    ODBCDataAccess bs = new ODBCDataAccess();
         //    DataTable tblBuildData = new DataTable();
         //    string sql = null;
-         
+
         //    sql = GetSalesOrderQueryString();
-           
+
         //    tblBuildData = bs.GetAllDataFromQuery(sql);
-         
+
         //    return tblBuildData;
         //}
 
@@ -257,10 +258,11 @@ namespace Data_Access
         {
             string sql = string.Empty;
 
-            sql = "SELECT SO_SalesOrderHeader.SalesOrderNo, AR_Customer.CustomerName " +
+            sql = "SELECT SO_SalesOrderHeader.SalesOrderNo, AR_Customer.CustomerName, " +
+                "SO_SalesOrderHeader.OrderType " +
             "FROM AR_Customer AR_Customer, SO_SalesOrderHeader SO_SalesOrderHeader " +
             "WHERE AR_Customer.ARDivisionNo = SO_SalesOrderHeader.ARDivisionNo AND " +
-            "AR_Customer.CustomerNo = SO_SalesOrderHeader.CustomerNo AND((SO_SalesOrderHeader.SalespersonNo = ?) " +
+            "AR_Customer.CustomerNo = SO_SalesOrderHeader.CustomerNo AND (SO_SalesOrderHeader.SalespersonNo = ?) " +
             "AND(SO_SalesOrderHeader.OrderStatus = 'O') AND (SO_SalesOrderHeader.OrderType in ('B','S')) ORDER BY SO_SalesOrderHeader.SalesOrderNo DESC";
 
             return sql;
@@ -677,6 +679,27 @@ namespace Data_Access
             return tblBuildData;
         }
 
+        public static DateTime GetDate(string dateToEvaluate)
+        {
+            string[] formats = { "MM/dd/yyyy", "MM/d/yyyy", "M/d/yyyy h:mm:ss tt","MM/dd/yy","MM/dd/yy hh:mm:ss tt","MM/dd/yy hh:mm:ss","M/d/yyyy h:mm tt",
+                         "MM/dd/yyyy hh:mm:ss", "M/d/yyyy h:mm:ss",
+                         "M/d/yyyy hh:mm tt", "M/d/yyyy hh tt",
+                         "M/d/yyyy h:mm", "M/d/yyyy h:mm",
+                         "MM/dd/yyyy hh:mm", "M/dd/yyyy hh:mm", "MM/d/yyyy h:mm:ss tt" };
+            DateTime dateValue;
+
+            if (DateTime.TryParseExact(dateToEvaluate, formats, new System.Globalization.CultureInfo("en-US"),
+                System.Globalization.DateTimeStyles.None, out dateValue))
+            {
+                return dateValue;
+            }
+            else
+            {
+                dateValue = DefaultDate;
+                return dateValue;
+            }
+
+        }
 
 
     }

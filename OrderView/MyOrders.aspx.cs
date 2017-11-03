@@ -4,18 +4,25 @@ using System.Reflection;
 using System.Data;
 using Data_Access;
 using System.Web.UI.WebControls;
-using System.Collections.Generic;
 using System.Collections;
+using System.Threading.Tasks;
+using System.Collections.Generic;
 
 public partial class MyOrders : System.Web.UI.Page
 {
 
     public int OrderCount { get; set; }
+    private List<SalesOrder> lsChanges = new List<SalesOrder>();
+
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (!Page.IsPostBack) { LoadSalesPersons(); }
+        if (!Page.IsPostBack) {
+            LoadSalesPersons();
+            //lsChanges = await RetrieveChanges();
+        }
 
     }
+
 
     private void LoadSalesPersons()
     {
@@ -59,6 +66,7 @@ public partial class MyOrders : System.Web.UI.Page
         List<string> lsSalesOrdersFiltered = new List<string>();
 
         string selectedSalesTeamNumber = ddlSalesTeam.SelectedValue.ToString();
+        
         dtSalesOrders = CommonData.GetMySalesOrders(selectedSalesTeamNumber);
 
         /////remove items that are not make items
@@ -118,6 +126,7 @@ public partial class MyOrders : System.Web.UI.Page
             dlMyOrders.DataSource = dtSalesOrderItems;
 
             OrderCount = dtSalesOrderItems.Rows.Count;
+            LoadInfoFromXML();
 
             /////this section moved to service
             //   try
@@ -146,6 +155,7 @@ public partial class MyOrders : System.Web.UI.Page
         {
             dlMyOrders.DataSource = dtSalesOrders;
             OrderCount = dtSalesOrders.Rows.Count;
+            LoadInfoFromXML();
             dlMyOrders.DataBind();
         }
     }
@@ -185,6 +195,27 @@ public partial class MyOrders : System.Web.UI.Page
         return source;
     }
 
+    //private async void CheckOrderDates()
+    //{
+    //    Task<InformationList> task = new Task<InformationList>(LoadInfoFromXml);
+    //    task.Start();
+
+    //    int totalChangeCount = 0;
+
+    //    lsChanges = await task;
+    //    OrderCount = totalChangeCount;
+
+    //}
+
+    private void LoadInfoFromXML()
+    {
+        int totalChangesFound = 0;
+        XMLHandler xh = new XMLHandler();
+        lsChanges = xh.GetListOfChanges();
+        totalChangesFound = lsChanges.Count;
+         
+    }
+
     //moved to service on UPSCOSP
 
     //    protected void WriteValues(Information i)
@@ -201,22 +232,33 @@ public partial class MyOrders : System.Web.UI.Page
 
     protected void dlMyOrders_ItemDataBound(object sender, DataListItemEventArgs e)
     {
+
+
         if( e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
         {
-           
-       //  DataRowView row = (DataRowView)e.Item.DataItem;
+            Button SoNum = (Button)e.Item.FindControl("lblSONum");
 
             DataTable view = (DataTable)dlMyOrders.DataSource;
 
             string currentOrderType = view.Rows[e.Item.ItemIndex]["OrderType"].ToString();
-            if(currentOrderType == "B") {
-                ////TODO
-               Button SoNum = (Button)e.Item.FindControl("lblSONum");
+            if(currentOrderType == "B" && (!SoNum.CssClass.Contains("changes"))) {
+               
+           
                 SoNum.CssClass = "order backOrder";
                
             }
 
-             
+            string currentOrder = view.Rows[e.Item.ItemIndex]["SalesOrderNo"].ToString();
+            var value = lsChanges.FindIndex(item => item.SalesOrderNo == currentOrder);
+
+            if(value >= 0) { 
+            //this is where I will look for the sales order in the list of changes
+                SoNum.CssClass += " changes";
+            //append some detail into the mouse hover information area somehow
+
+            }
+
+
         }
 
     }

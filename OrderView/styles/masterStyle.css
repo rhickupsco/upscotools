@@ -294,3 +294,27 @@ background-size: 90px;
    border-radius:50%;
    box-shadow:0 0 1px #333;
 }
+
+.changes{
+    background-color: red;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: .4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count:20;/* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function:linear;
+    animation-name: example;
+    animation-duration: .4s;
+    animation-iteration-count: 20;
+    animation-timing-function:linear;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {background-color: yellow; border-color:aliceblue;}
+    to {background-color: red; border-bottom-color: lime;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {background-color: yellow; border-color:aliceblue;}
+    to {background-color: red; border-bottom-color: lime;}
+}
