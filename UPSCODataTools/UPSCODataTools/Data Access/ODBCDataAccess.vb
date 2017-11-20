@@ -60,12 +60,12 @@ Public Class ODBCDataAccess 'Sage Connection Class
         Dt = New DataTable
         'this is the reference to the SQL Connection string which is the login details and location of the Sage Database
         'Can be modified in the app.config
-        ConnectionString = "DSN=Sage 100 2014; UID=swk; PWD=indigo01; 
+        ConnectionString = "DSN=XXXXXXXXXXX; UID=swk; PWD=XXXXXXXXXXXXXXXXX; 
         Directory=\\mas3\Sage\Version_2014\MAS90; 
         Prefix=\\mas3\Sage\Version_2014\MAS90\SY\,\\mas3\Sage\Version_2014\MAS90\==\; 
-        ViewDLL=\\mas3\Sage\Version_2014\MAS90\Home; Company=UMD; LogFile=\PVXODBC.LOG; 
+        ViewDLL=\\mas3\Sage\Version_2014\MAS90\Home; Company=XXXXXX; LogFile=\PVXODBC.LOG; 
         RemotePVKIOHost=MAS3; DirtyReads=1; BurstMode=1; StripTrailingSpaces=1; 
-        SERVER=NotTheServer"
+        SERVER=XXXXXXXXXXX"
         'this builds a new connection to the database
         Conn = New OdbcConnection(ConnectionString)
         'this is a container for the command that you will send it on its way with, such as "Select * from LabelsTable"
