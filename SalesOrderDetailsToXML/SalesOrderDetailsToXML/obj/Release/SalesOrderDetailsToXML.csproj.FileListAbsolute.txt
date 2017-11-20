@@ -1,0 +1,7 @@
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\SalesOrderDetailsToXML\SalesOrderDetailsToXML\bin\Release\SalesOrderDetailsToXML.exe.config
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\SalesOrderDetailsToXML\SalesOrderDetailsToXML\bin\Release\SalesOrderDetailsToXML.exe
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\SalesOrderDetailsToXML\SalesOrderDetailsToXML\bin\Release\SalesOrderDetailsToXML.pdb
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\SalesOrderDetailsToXML\SalesOrderDetailsToXML\obj\Release\SalesOrderDetailsToXML.ProjectInstaller.resources
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\SalesOrderDetailsToXML\SalesOrderDetailsToXML\obj\Release\SalesOrderDetailsToXML.csproj.GenerateResource.Cache
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\SalesOrderDetailsToXML\SalesOrderDetailsToXML\obj\Release\SalesOrderDetailsToXML.exe
+C:\Users\rhickman\Documents\Visual Studio 2015\Projects\SalesOrderDetailsToXML\SalesOrderDetailsToXML\obj\Release\SalesOrderDetailsToXML.pdb

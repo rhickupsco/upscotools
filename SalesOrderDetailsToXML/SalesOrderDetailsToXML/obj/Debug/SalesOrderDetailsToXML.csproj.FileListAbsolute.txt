@@ -1,0 +1,14 @@
+C:\Users\WEB\Desktop\SalesOrderDetailsToXML\SalesOrderDetailsToXML\bin\Debug\SalesOrderDetailsToXML.exe.config
+C:\Users\WEB\Desktop\SalesOrderDetailsToXML\SalesOrderDetailsToXML\bin\Debug\SalesOrderDetailsToXML.exe
+C:\Users\WEB\Desktop\SalesOrderDetailsToXML\SalesOrderDetailsToXML\bin\Debug\SalesOrderDetailsToXML.pdb
+C:\Users\WEB\Desktop\SalesOrderDetailsToXML\SalesOrderDetailsToXML\obj\Debug\SalesOrderDetailsToXML.csprojResolveAssemblyReference.cache
+C:\Users\WEB\Desktop\SalesOrderDetailsToXML\SalesOrderDetailsToXML\obj\Debug\SalesOrderDetailsToXML.csproj.CoreCompileInputs.cache
+C:\Users\WEB\Desktop\SalesOrderDetailsToXML\SalesOrderDetailsToXML\obj\Debug\SalesOrderDetailsToXML.exe
+C:\Users\WEB\Desktop\SalesOrderDetailsToXML\SalesOrderDetailsToXML\obj\Debug\SalesOrderDetailsToXML.pdb
+C:\Users\rhickman\documents\visual studio 2015\Projects\SalesOrderDetailsToXML\SalesOrderDetailsToXML\bin\Debug\SalesOrderDetailsToXML.exe.config
+C:\Users\rhickman\documents\visual studio 2015\Projects\SalesOrderDetailsToXML\SalesOrderDetailsToXML\bin\Debug\SalesOrderDetailsToXML.exe
+C:\Users\rhickman\documents\visual studio 2015\Projects\SalesOrderDetailsToXML\SalesOrderDetailsToXML\bin\Debug\SalesOrderDetailsToXML.pdb
+C:\Users\rhickman\documents\visual studio 2015\Projects\SalesOrderDetailsToXML\SalesOrderDetailsToXML\obj\Debug\SalesOrderDetailsToXML.ProjectInstaller.resources
+C:\Users\rhickman\documents\visual studio 2015\Projects\SalesOrderDetailsToXML\SalesOrderDetailsToXML\obj\Debug\SalesOrderDetailsToXML.csproj.GenerateResource.Cache
+C:\Users\rhickman\documents\visual studio 2015\Projects\SalesOrderDetailsToXML\SalesOrderDetailsToXML\obj\Debug\SalesOrderDetailsToXML.exe
+C:\Users\rhickman\documents\visual studio 2015\Projects\SalesOrderDetailsToXML\SalesOrderDetailsToXML\obj\Debug\SalesOrderDetailsToXML.pdb
